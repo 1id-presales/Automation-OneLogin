@@ -8,5 +8,6 @@ Create an API credential for Terraform to use in your target OneLogin environmen
 - Set the ol_client_secret variable in your system level environment variables with **export TF_VAR_ol_client_secret=xxxxxxxxx** replacing xxxx with the client secret from the API credential you have already created for running Terraform against your target OneLogin Environement
 - Initialize your terraform environment by running the command **terraform init**
 - Run a terraform plan operation to see what changes will be applied to your environment. Run the command **terraform plan -var-file "target_ol_env.tfvars"**
+- If you are happy with the output of the plan from the previous step proceed to apply the planned changes. Apply the planned changed with the command **terraform apply -var-file "target_ol_env.tfvars"**
 - abc
 
