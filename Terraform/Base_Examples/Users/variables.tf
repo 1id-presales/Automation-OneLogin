@@ -8,6 +8,11 @@ variable "client_secret" {
   default = ""
 }
 
+variable "ol_subdomain" {
+  type = string
+  description = "Subdomain name for target OneLogin env"
+}
+
 ########### Users Vars ###########
 
 variable "user1_username" {
