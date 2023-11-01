@@ -24,8 +24,8 @@ provider "restapi" {
 
 provider "onelogin" {
   # Configuration options
-client_id = var.client_id
-client_secret = var.client_secret
+client_id = var.ol_client_id
+client_secret = var.ol_client_secret
 }
 
 #### DA Users via OneLogin Provider
