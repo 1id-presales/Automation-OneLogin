@@ -3,7 +3,7 @@ Do not store in text files. If your target OneLogin environment is example.onelo
 below */
 
 ol_subdomain = "example"
-client_id = ""
+ol_client_id = ""
 
 ## User Vars ##
 user1_username = "john.smith"
