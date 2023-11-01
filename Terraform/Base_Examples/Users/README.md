@@ -8,9 +8,11 @@ Create an API credential for Terraform to use in your target OneLogin environmen
 - Set the ol_client_secret variable in your system level environment variables with **export TF_VAR_ol_client_secret=xxxxxxxxx** replacing xxxx with the client secret from the API credential you have already created for running Terraform against your target OneLogin Environement
 - Initialize your terraform environment by running the command **terraform init**
 - Run a terraform plan operation to see what changes will be applied to your environment. Run the command **terraform plan -var-file "target_ol_env.tfvars"**
-- If you are happy with the output of the plan from the previous step proceed to apply the planned changes. Apply the planned changes with the command **terraform apply -var-file "target_ol_env.tfvars"**
+- If you are happy with the output of the plan from the previous step proceed to apply the planned changes. Apply the planned changes with the command **terraform apply -var-file "target_ol_env.tfvars"** and enter yes at the prompt.
 - Navigate to the Admin console of your target OneLogin environment and validate that two new users have been created successfully.
 - Open the **target_ol_env.tfvars** with your favourite text editor and modify the value to your **user1_username** variable and save the file.
 - Run a terraform plan operation to see what changes will be applied to your environment. Run the command **terraform plan -var-file "target_ol_env.tfvars"**. Now there will be one planned change to the existing resource **onelogin_users.username** 
-- If you are happy with the output of the plan from the previous step proceed to apply the planned changes. Apply the planned changes with the command **terraform apply -var-file "target_ol_env.tfvars"**
+- If you are happy with the output of the plan from the previous step proceed to apply the planned changes. Apply the planned changes with the command **terraform apply -var-file "target_ol_env.tfvars"** and enter yes at the prompt.
+- Navigate to the Admin console of your target OneLogin environment and validate that the username for your user have been updated successfully.
+- abc
 
