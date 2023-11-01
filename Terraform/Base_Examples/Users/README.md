@@ -3,6 +3,7 @@
 This example will create two new users in your target OneLogin environment and set a custom attribute value on one of the users. <br>
 Before proceeding with this example ensure you create a new custom field in your target OneLogin environment called **food**. <br>
 For more details see **https://onelogin.service-now.com/support?id=kb_article&sys_id=653d60e6973b2150c90c3b0e6253afd2** <br>
+
 Create an API credential for Terraform to use in your target OneLogin environment with **"Manage Users" permissions**. For detail see **https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials** 
 
 - From a system with Terraform and Git installed create a new folder and run **git clone https://github.com/1id-presales/Automation-OneLogin.git**
