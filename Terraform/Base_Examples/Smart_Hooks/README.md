@@ -3,6 +3,8 @@
 This example will create a **Smart Hook Environment Variable** and **a Pre-Authentication Smart Hook** in your target OneLogin environment. <br>
 This example will deploy a **minimum viable Smart Hook** to your environment that will simply passthrough all authentication traffic un-modified. <br>
 This example Smart Hook will execute anytime any users in your OneLogin environment attempt to login. <br>
+Please ensure to **delete any existing Pre Auth Smart Hooks** that may have been **manually** applied to your target OneLogin environment **before** you try to <br>
+run this example otherwise you will get an error
 
 For more examples of deploying and maintaining Smart Hooks via Terraform please see the Smart Hooks dedicated repo **https://github.com/1id-presales/Automation-OneLogin-SH** 
 
