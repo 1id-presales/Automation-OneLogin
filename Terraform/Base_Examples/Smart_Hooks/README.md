@@ -1,6 +1,6 @@
 # How To Instructions
 
-This example will create a ** Smart Hook Environment Variable** and **a Pre-Authentication Smart Hook** in your target OneLogin environment. <br>
+This example will create a **Smart Hook Environment Variable** and **a Pre-Authentication Smart Hook** in your target OneLogin environment. <br>
 
 For more details on Smart Hooks **https://developers.onelogin.com/api-docs/2/smart-hooks/overview** <br>
 
