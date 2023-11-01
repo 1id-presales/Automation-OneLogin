@@ -4,5 +4,5 @@ From a system with Terraform and Git installed create a new folder and run **git
 
 - Navigate into the Users base example folder with **cd Automation-OneLogin/Terraform/Base_Examples/Users/**
 - Modify the contents of the file **target_ol_env.tfvars** with your favourite text editor
-- Set the ol_client_secret variable with **export TF_VAR_ol_client_secret=xxxxxxxxx** replacing xxxx with the client secret from the API credential you have already created for running Terraform against your target OneLogin Environement
+- Set the ol_client_secret variable in your system level environment variables with **export TF_VAR_ol_client_secret=xxxxxxxxx** replacing xxxx with the client secret from the API credential you have already created for running Terraform against your target OneLogin Environement
 
