@@ -28,7 +28,7 @@ client_id = var.ol_client_id
 client_secret = var.ol_client_secret
 }
 
-#### DA Users via OneLogin Provider
+#### Users via OneLogin Provider
 # create a new user using the offical OneLogin Terraform Provider
 resource onelogin_users username {
   username = var.user1_username
@@ -40,7 +40,7 @@ resource onelogin_users username {
   custom_attributes = {food = "pizza"}
 }
 
-#### DA Users via generic REST Provider
+#### Users via generic REST Provider
 ## example of how to create a second new user in your OneLogin environment this time using the generic Rest Provider and our V2 users endpoint
 resource "restapi_object" "oneloginuser1" {
   path = "/api/2/users"
