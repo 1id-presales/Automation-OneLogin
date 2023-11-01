@@ -14,5 +14,6 @@ Create an API credential for Terraform to use in your target OneLogin environmen
 - Run a terraform plan operation to see what changes will be applied to your environment. Run the command **terraform plan -var-file "target_ol_env.tfvars"**. Now there will be one planned change to the existing resource **onelogin_users.username** 
 - If you are happy with the output of the plan from the previous step proceed to apply the planned changes. Apply the planned changes with the command **terraform apply -var-file "target_ol_env.tfvars"** and enter yes at the prompt.
 - Navigate to the Admin console of your target OneLogin environment and validate that the username for your user has been updated successfully.
+- To run a cleanup to remove these two new users from your target OneLogin environment run the command **terraform destroy -var-file "target_ol_env.tfvars"**.
 - abc
 
