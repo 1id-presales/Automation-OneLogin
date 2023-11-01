@@ -1,5 +1,6 @@
 # How To Instructions
 
+This example will create two new users in your target OneLogin environment and set a custom attribute value on one of the users. <br>
 Create an API credential for Terraform to use in your target OneLogin environment with **"Manage Users" permissions**. For detail see **https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials** 
 
 - From a system with Terraform and Git installed create a new folder and run **git clone https://github.com/1id-presales/Automation-OneLogin.git**
