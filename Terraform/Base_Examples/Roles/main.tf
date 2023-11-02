@@ -27,3 +27,22 @@ provider "onelogin" {
 client_id = var.ol_client_id
 client_secret = var.ol_client_secret
 }
+
+#### Roles via OneLogin Provider
+
+## create a birthright role for all workforce
+resource onelogin_roles birthright {
+  name = var.role1_name
+  apps = []
+  users = []
+}
+
+#### Roles via generic REST provider
+
+## example of how to create a new role in your OneLogin environment
+resource "restapi_object" "oneloginrole1" {
+  path = "/api/2/roles"
+  data = "{ \"name\": \"${var.role2_name}\" }"
+}
+
+
