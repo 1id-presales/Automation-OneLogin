@@ -14,3 +14,13 @@ variable "ol_client_secret" {
 }
 
 ########### Roles Vars ###########
+
+variable "role1_name" {
+  type = string
+  description = "Name for the OneLogin role"
+}
+
+variable "role2_name" {
+  type = string
+  description = "Name for the OneLogin role"
+}
