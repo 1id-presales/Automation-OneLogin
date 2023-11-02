@@ -33,7 +33,7 @@ client_secret = var.ol_client_secret
 ## create a birthright role for all workforce
 resource onelogin_roles birthright {
   name = var.role1_name
-  apps = []
+  apps = [var.role1_appid]
   users = []
 }
 
@@ -42,7 +42,7 @@ resource onelogin_roles birthright {
 ## example of how to create a new role in your OneLogin environment
 resource "restapi_object" "oneloginrole1" {
   path = "/api/2/roles"
-  data = "{ \"name\": \"${var.role2_name}\" }"
+  data = "{ \"name\": \"${var.role2_name}\", \"apps\": [${var.role2_appid}] }"
 }
 
 
