@@ -20,7 +20,17 @@ variable "role1_name" {
   description = "Name for the OneLogin role"
 }
 
+variable "role1_appid" {
+  type = number
+  description = "Appid of the App to associate to the OneLogin role"
+}
+
 variable "role2_name" {
   type = string
   description = "Name for the OneLogin role"
+}
+
+variable "role2_appid" {
+  type = number
+  description = "Appid of the App to associate to the OneLogin role"
 }
