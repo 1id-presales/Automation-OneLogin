@@ -34,3 +34,8 @@ variable "role2_appid" {
   type = number
   description = "Appid of the App to associate to the OneLogin role"
 }
+
+variable "role2_admin_userid" {
+  type = number
+  description = "Userid for the user who will be the admin for the OneLogin role"
+}
