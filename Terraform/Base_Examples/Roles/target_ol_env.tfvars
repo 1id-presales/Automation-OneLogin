@@ -4,3 +4,5 @@ below */
 
 ol_subdomain = "example"
 ol_client_id = ""
+role1_name = ""
+role2_name = ""
