@@ -1,6 +1,6 @@
 # How To Instructions
 
-This example will create **two new roles** in your target OneLogin environment. One will be created via the OneLogin Terraform provider and another <br>
+This example will create **two new roles** in your target OneLogin environment. One will be created via the OneLogin Terraform provider and another
 via a generic REST provider. <br>
 
 Create an API credential for Terraform to use in your target OneLogin environment with **"Manage Users" permissions**. For detail see **https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials** 
