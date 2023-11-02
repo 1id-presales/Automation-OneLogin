@@ -42,7 +42,7 @@ resource onelogin_roles birthright {
 ## example of how to create a new role in your OneLogin environment
 resource "restapi_object" "oneloginrole1" {
   path = "/api/2/roles"
-  data = "{ \"name\": \"${var.role2_name}\", \"apps\": [${var.role2_appid}] }"
+  data = "{ \"name\": \"${var.role2_name}\", \"apps\": [${var.role2_appid}], \"users\":[], \"admins\": [${var.role2_admin_userid}]}"
 }
 
 
