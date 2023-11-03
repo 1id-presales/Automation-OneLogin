@@ -1,7 +1,8 @@
 # How To Instructions
 
 This example will create **an OIDC application** in your target OneLogin environment from our **OIDC Generic Connector**. <br>
-Populate the required configuration for you OIDC Application into the relevant variables in the **target_ol_env.tfvars** file. .
+Populate the required configuration for you OIDC Application into the relevant variables in the **target_ol_env.tfvars** file.<br>
+For more details on configuring this connector please see **https://onelogin.service-now.com/support?id=kb_article&sys_id=2fd988e697b72150c90c3b0e6253af7f&kb_category=93e869b0db185340d5505eea4b961934**
 
 Create an API credential for Terraform to use in your target OneLogin environment with **"Manage All" permissions**. For detail see **https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials** 
 
