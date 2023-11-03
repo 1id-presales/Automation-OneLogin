@@ -52,5 +52,5 @@ variable "oidc_app1_description" {
 
 variable "oidc_app1_visibility" {
   type = bool
-  default = ""
+  default = true
 }
