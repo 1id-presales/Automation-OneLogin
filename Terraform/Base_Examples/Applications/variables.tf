@@ -64,3 +64,12 @@ variable "oidc_app1_token_endpoint_auth_method" {
   type = number
   default = 1
 }
+variable "oidc_app1_access_token_exp_mins" {
+  type = number
+  default = 1
+}
+
+variable "oidc_app1_refresh_token_exp_mins" {
+  type = number
+  default = 1
+}
