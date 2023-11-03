@@ -5,7 +5,7 @@ below */
 ol_subdomain = "example"      # required
 ol_client_id = ""             # required
 
-## App Vars ##
+## OIDC App Vars ##
 oidc_app1_brand_id = ""        # optional - leave blank for this app to use master brand. Or configure brand id if using app level branding
 oidc_app1_login_url = ""       # optional - OneLogin mimics an IdP-initiated SSO experience and directs the user to the app's login page, where the SP-initiated authorization flow begins.
 oidc_app1_name = ""            # required
