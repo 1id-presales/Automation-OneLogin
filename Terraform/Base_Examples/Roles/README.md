@@ -2,7 +2,7 @@
 
 This example will create **two new roles** in your target OneLogin environment. One will be created via the OneLogin Terraform provider and another
 via a generic REST provider. <br>
-An application will be assigned to each role by populating a validate application id from your target OneLogin environment into the **target_ol_env.tfvars** file. An administrator for role 2 can also be assigned by assiging the userid in the **target_ol_env.tfvars** file.
+Applications will be assigned to each role by populating a validate application id from your target OneLogin environment into the **target_ol_env.tfvars** file. An administrator for role 2 can also be assigned by assiging the userid in the **target_ol_env.tfvars** file.
 
 Create an API credential for Terraform to use in your target OneLogin environment with **"Manage All" permissions**. For detail see **https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials** 
 
