@@ -39,3 +39,18 @@ variable "oidc_app1_login_url" {
   type = string
   default = ""
 }
+
+variable "oidc_app1_notes" {
+  type = string
+  default = ""
+}
+
+variable "oidc_app1_description" {
+  type = string
+  default = ""
+}
+
+variable "oidc_app1_visibility" {
+  type = bool
+  default = ""
+}
