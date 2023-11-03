@@ -25,6 +25,11 @@ variable "oidc_app1_brand_id" {
   default = ""
 }
 
+variable "oidc_app1_roleid" {
+  type = string
+  default = null
+}
+
 variable "oidc_app1_icon_url" {
   type = string
   default = ""
