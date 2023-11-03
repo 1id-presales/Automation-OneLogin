@@ -36,7 +36,7 @@ client_secret = var.ol_client_secret
 ## example of how to create and configure a new OIDC app in your OneLogin environment using the generic OIDC connector
 resource "restapi_object" "oidcapp1" {
   path = "/api/2/apps"
-  data = "{ \"connector_id\": \"108419\", \"brand_id\": \"${var.oidc_app1_brand_id}\", \"name\": \"${var.oidc_app1_name}\", \"visible\" : \"${var.oidc_app1_visibility}\" , \"notes\" : \"${var.oidc_app1_notes}\", \"description\":\"${var.oidc_app1_description}\", \"configuration\":{\"redirect_uri\": \"${var.oidc_app1_redirect_uri}\" , \"post_logout_redirect_uri\": \"${var.oidc_app1_logout_redirect_uri}\", \"login_url\":\"${var.oidc_app1_login_url}\", \"oidc_application_type\":\"0\", \"token_endpoint_auth_method\":\"1\"}}"
+  data = "{ \"connector_id\": \"108419\", \"brand_id\": \"${var.oidc_app1_brand_id}\", \"name\": \"${var.oidc_app1_name}\", \"visible\" : \"${var.oidc_app1_visibility}\" , \"notes\" : \"${var.oidc_app1_notes}\", \"description\":\"${var.oidc_app1_description}\", \"configuration\":{\"redirect_uri\": \"${var.oidc_app1_redirect_uri}\" , \"post_logout_redirect_uri\": \"${var.oidc_app1_logout_redirect_uri}\", \"login_url\":\"${var.oidc_app1_login_url}\", \"oidc_application_type\":\"${var.oidc_app1_oidc_application_type}\", \"token_endpoint_auth_method\":\"${var.oidc_app1_token_endpoint_auth_method}\"}}"
 }
 
 ### Generic SAML Advanced Connector APP ###
