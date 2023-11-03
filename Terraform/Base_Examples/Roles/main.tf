@@ -34,7 +34,7 @@ client_secret = var.ol_client_secret
 ## example of how to create a new role in your OneLogin environment
 resource "restapi_object" "oneloginrole" {
   path = "/api/2/roles"
-  data = "{ \"name\": \"${var.role1_name}\", \"apps\": [${var.role1_appid1},${var.role1_appid2}], \"users\":[], \"admins\": []}"
+  data = "{ \"name\": \"${var.role1_name}\", \"apps\": [${var.role1_appid1}], \"users\":[], \"admins\": []}"
 }
 
 ## example of how to create a new role in your OneLogin environment
