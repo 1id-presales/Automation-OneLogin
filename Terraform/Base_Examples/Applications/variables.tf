@@ -25,6 +25,11 @@ variable "oidc_app1_brand_id" {
   default = ""
 }
 
+variable "oidc_app1_icon_url" {
+  type = string
+  default = ""
+}
+
 variable "oidc_app1_logout_redirect_uri" {
   type = string
   default = ""
