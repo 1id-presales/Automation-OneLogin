@@ -54,3 +54,13 @@ variable "oidc_app1_visibility" {
   type = bool
   default = true
 }
+
+variable "oidc_app1_oidc_application_type" {
+  type = number
+  default = 0
+}
+
+variable "oidc_app1_token_endpoint_auth_method" {
+  type = number
+  default = 1
+}
