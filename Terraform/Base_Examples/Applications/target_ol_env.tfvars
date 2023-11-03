@@ -16,3 +16,5 @@ oidc_app1_description = ""     # optionial - Description to be displayed for the
 oidc_app1_visibility =  true     # required - true so app is visible to users as a tile in the app portal. false to hide it in app portal
 oidc_app1_oidc_application_type = "0" # required - 0 for a web app , 1 for native app, defaults to 0
 oidc_app1_token_endpoint_auth_method = "0" # required - token endpoint authentication type. 0 for BASIC,  1 for POST  , 2 for PKCE, defaults to 0
+oidc_app1_access_token_exp_mins = "60"  # optionial - Access token timeout settings. defaults is 60 mins
+oidc_app1_refresh_token_exp_mins = "43200"  # optionial -  Refresh token timeout settings. defaults is 30 days/43,200 mins
