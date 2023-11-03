@@ -13,14 +13,29 @@ variable "ol_client_secret" {
   description = "Client Secret for API Credential created in target OneLogin env"
 }
 
-########### Apps Vars ###########
+########### Apps Vars ###############
 
 variable "oidc_app1_name" {
   type = string
   default = ""
 }
 
+variable "oidc_app1_brand_id" {
+  type = string
+  default = ""
+}
+
+variable "oidc_app1_logout_redirect_uri" {
+  type = string
+  default = ""
+}
+
 variable "oidc_app1_redirect_uri" {
+  type = string
+  default = ""
+}
+
+variable "oidc_app1_login_url" {
   type = string
   default = ""
 }
