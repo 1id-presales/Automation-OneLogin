@@ -6,5 +6,8 @@ ol_subdomain = "example"
 ol_client_id = ""
 
 ## App Vars ##
+oidc_app1_brand_id = ""
+oidc_app1_login_url = ""
 oidc_app1_name = ""
 oidc_app1_redirect_uri = ""
+oidc_app1_logout_redirect_uri = ""
