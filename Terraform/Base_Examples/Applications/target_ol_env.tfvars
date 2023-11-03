@@ -11,3 +11,6 @@ oidc_app1_login_url = ""       # optionial - OneLogin mimics an IdP-initiated SS
 oidc_app1_name = ""            # required
 oidc_app1_redirect_uri = ""    # required
 oidc_app1_logout_redirect_uri = ""    # optionial - If you want to establish redirects for after the user is logged out by OIDC
+oidc_app1_notes = ""           # optionial - Notes to be displayed within the app
+oidc_app1_description = ""     # optionial - Description to be displayed for the app
+oidc_app1_visibility =  ""     # required - True so app is visible to users as a tile in the app portal. False to hide it in app portal
