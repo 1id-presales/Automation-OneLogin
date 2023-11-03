@@ -21,12 +21,9 @@ variable "role1_name" {
 }
 
 variable "role1_appid1" {
-  type = number
+  type = string
+  default = null
   description = "Appid of the App to associate to the OneLogin role"
-}
-variable "role1_appid2" {
-  type = number
-  description = "Appid of the Second App to associate to the OneLogin role"
 }
 
 variable "role2_name" {
@@ -35,11 +32,13 @@ variable "role2_name" {
 }
 
 variable "role2_appid" {
-  type = number
+  type = string
+  default = null
   description = "Appid of the App to associate to the OneLogin role"
 }
 
 variable "role2_admin_userid" {
-  type = number
+  type = string
+  default = null
   description = "Userid for the user who will be the admin for the OneLogin role"
 }
