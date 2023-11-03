@@ -4,3 +4,7 @@ below */
 
 ol_subdomain = "example"
 ol_client_id = ""
+
+## App Vars ##
+oidc_app1_name = ""
+oidc_app1_redirect_uri = ""
