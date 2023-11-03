@@ -34,9 +34,9 @@ client_secret = var.ol_client_secret
 ### Generic OIDC Connector APP ###
 
 ## example of how to create and configure a new OIDC app in your OneLogin environment using the generic OIDC connector
-resource "restapi_object" "oneloginapp1" {
+resource "restapi_object" "oidcapp1" {
   path = "/api/2/apps"
-  data = "{ \"connector_id\": \"108419\", \"name\": \"${var.oidc_app1_name}\", \"visible\" : \"false\" , \"notes\" : \"this is a note\", \"description\":\"nice app\", \"configuration\":{\"redirect_uri\": \"${var.oidc_app1_redirect_uri}\" , \"login_url\":\"https://myapp.com/\", \"oidc_application_type\":\"0\", \"token_endpoint_auth_method\":\"1\"}}"
+  data = "{ \"connector_id\": \"108419\", \"brand_id\": \"${var.oidc_app1_brand_id}\", \"name\": \"${var.oidc_app1_name}\", \"visible\" : \"false\" , \"notes\" : \"some notes\", \"description\":\"Some App\", \"configuration\":{\"redirect_uri\": \"${var.oidc_app1_redirect_uri}\" , \"post_logout_redirect_uri\": \"${var.oidc_app1_logout_redirect_uri}\", \"login_url\":\"${var.oidc_app1_login_url}\", \"oidc_application_type\":\"0\", \"token_endpoint_auth_method\":\"1\"}}"
 }
 
 ### Generic SAML Advanced Connector APP ###
