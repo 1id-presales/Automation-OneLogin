@@ -15,4 +15,4 @@ oidc_app1_notes = ""           # optionial - Notes to be displayed within the ap
 oidc_app1_description = ""     # optionial - Description to be displayed for the app
 oidc_app1_visibility =  true     # required - true so app is visible to users as a tile in the app portal. false to hide it in app portal
 oidc_app1_oidc_application_type = "0" # required - 0 for a web app , 1 for native app, defaults to 0
-oidc_app1_token_endpoint_auth_method = "0" # required - token endpoint authentication type. 0 for BASIC,  1 for POST  , 2 for PKCE, defaults to 1
+oidc_app1_token_endpoint_auth_method = "1" # required - token endpoint authentication type. 0 for BASIC,  1 for POST  , 2 for PKCE, defaults to 1
