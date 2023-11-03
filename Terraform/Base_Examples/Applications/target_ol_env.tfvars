@@ -2,8 +2,8 @@
 Do not store in text files. If your target OneLogin environment is example.onelogin.com then populate ol_subdomain like 
 below */
 
-ol_subdomain = "example"
-ol_client_id = ""
+ol_subdomain = "example"      # required
+ol_client_id = ""             # required
 
 ## App Vars ##
 oidc_app1_brand_id = ""        # optional - leave blank for this app to use master brand. Or configure brand id if using app level branding
