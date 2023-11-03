@@ -33,7 +33,7 @@ client_secret = var.ol_client_secret
 ## create a birthright role for all workforce
 resource onelogin_roles birthright {
   name = var.role1_name
-  apps = [var.role1_appid]
+  apps = [var.role1_appid1,var.role1_appid2]
   users = []
 }
 
