@@ -9,6 +9,7 @@ ol_client_id = ""
 oidc_app1_brand_id = ""        # optionial - leave blank for this app to use master brand. Or configure brand id if using app level branding
 oidc_app1_login_url = ""       # optionial - OneLogin mimics an IdP-initiated SSO experience and directs the user to the app's login page, where the SP-initiated authorization flow begins.
 oidc_app1_name = ""            # required
+oidc_app1_icon_url = "/images/missing_connector_icon/square/original2.png"   # optional url for the icon for this app to be displayed in App Portal
 oidc_app1_redirect_uri = ""    # required
 oidc_app1_logout_redirect_uri = ""    # optionial - If you want to establish redirects for after the user is logged out by OIDC
 oidc_app1_notes = ""           # optionial - Notes to be displayed within the app
