@@ -14,3 +14,13 @@ variable "ol_client_secret" {
 }
 
 ########### Apps Vars ###########
+
+variable "oidc_app1_name" {
+  type = string
+  default = ""
+}
+
+variable "oidc_app1_redirect_uri" {
+  type = string
+  default = ""
+}
