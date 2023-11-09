@@ -83,3 +83,48 @@ variable "oidc_app1_refresh_token_exp_mins" {
   type = number
   default = 1
 }
+
+variable "saml_app1_name" {
+  type = string
+  default = ""
+}
+
+variable "saml_app1_brand_id" {
+  type = string
+  default = ""
+}
+
+variable "saml_app1_roleid" {
+  type = string
+  default = null
+}
+
+variable "saml_app1_policyid" {
+  type = string
+  default = null
+}
+
+variable "saml_app1_icon_url" {
+  type = string
+  default = ""
+}
+
+variable "saml_app1_notes" {
+  type = string
+  default = ""
+}
+
+variable "saml_app1_description" {
+  type = string
+  default = ""
+}
+
+variable "saml_app1_visibility" {
+  type = bool
+  default = true
+}
+
+variable "saml_app1_conf_cert_id" {
+  type = string
+  default = null
+}
