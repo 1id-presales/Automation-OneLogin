@@ -23,3 +23,12 @@ oidc_app1_refresh_token_exp_mins = "43200"  # optional -  Refresh token timeout 
 
 
 ## SAML App Vars ##
+saml_app1_brand_id = ""        # optionial - leave blank for this app to use master brand. Or configure brand id if using app level branding
+saml_app1_name = ""            # required
+saml_app1_roleid = ""         # optionial - Role ID to be allocated directly to the application
+saml_app1_policyid = ""            # optionial - App Policy ID to be allocated directly to the application
+saml_app1_icon_url = "/images/missing_connector_icon/square/original2.png"   # optional url for the icon for this app to be displayed in App Portal
+saml_app1_notes = ""           # optionial - Notes to be displayed within the app
+saml_app1_description = ""     # optionial - Description to be displayed for the app
+saml_app1_visibility =  true     # required - true so app is visible to users as a tile in the app portal. false to hide it in app portal
+saml_app1_conf_cert_id = ""    # optionial - certificate id to be allocated to the SAML app for token signing
