@@ -44,6 +44,6 @@ resource "restapi_object" "oidcapp1" {
 ## example of how to create and configure a new SAML app in your OneLogin environment using the generic SAML Advanced connector
 resource "restapi_object" "samlapp1" {
   path = "/api/2/apps"
-  data = "{ \"connector_id\": \"110016\", \"brand_id\": \"${var.saml_app1_brand_id}\",\"role_ids\": [${var.saml_app1_roleid}], \"name\": \"${var.saml_app1_name}\", \"notes\" : \"${var.saml_app1_notes}\", \"description\":\"${var.saml_app1_description}\", \"configuration\": { \"signature_algorithm\": \"SHA-256\",\"certificate_id\": 460559}}"
+  data = "{ \"connector_id\": \"110016\", \"brand_id\": \"${var.saml_app1_brand_id}\",\"role_ids\": [${var.saml_app1_roleid}], \"name\": \"${var.saml_app1_name}\", \"notes\" : \"${var.saml_app1_notes}\", \"description\":\"${var.saml_app1_description}\", \"configuration\": { \"signature_algorithm\": \"SHA-256\",\"certificate_id\": \"${var.saml_app1_conf_cert_id}\"}}"
 }
 
