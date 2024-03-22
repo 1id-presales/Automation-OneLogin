@@ -13,12 +13,7 @@ variable "ol_client_secret" {
   description = "Client Secret for API Credential created in target OneLogin env"
 }
 
-########### Roles Vars ###########
-
-variable "ol_app_entitlements_role_names" {
-  type        = list(string)
-  description = "list of all the OL Application Entitlements Roles that were created"
-}
+########### User Vars ########
 
 variable "ol_users" {
   type = list(object({
