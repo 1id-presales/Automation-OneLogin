@@ -240,7 +240,7 @@ resource onelogin_user_mappings app_access_birthright {
   enabled = true
   match = "all"
   for_each = { for key, val in var.ol_application_object :
-  	key => val if val.birthright_app == "true" }
+  	key => val if val.birthright_app == "yes" }
   actions  {
     value = [onelogin_roles.app_access["${each.value.notes}"].id]
     action = "add_role"
