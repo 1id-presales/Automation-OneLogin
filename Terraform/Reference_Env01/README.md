@@ -7,6 +7,17 @@ Populate the required configuration for your reference environment into the rele
 
 Create an API credential for Terraform to use in your target OneLogin environment with **"Manage All" permissions**. For detail see **https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials** 
 
+**Before** running this example it is required to **create some custom fields** in your target OneLogin environment to hold all of the attributes from the standard Okta user profile. It is not currently possible to create these custom fields via the OneLogin Admin API and must be done in your OneLogin Admin console manually. <br>
+
+The following custom fields should be created in your target OneLogin environment. <br>
+
+**staff_id** <br>
+**personal_mail** <br>
+**app_Wrike** <br>
+**app_Lever** <br>
+pluse add more app_xxxx custom fields for each app you want to add in your tfvars file for your application listing.
+
+
 **START**
 - From a system with Terraform and Git installed create a new folder and run 
 <br><pre>`git clone https://github.com/1id-presales/Automation-OneLogin.git`</pre>
