@@ -2,7 +2,7 @@
 Do not store in text files. If your target OneLogin environment is example.onelogin.com then populate ol_subdomain like 
 below */
 
-ol_subdomain = ""  # required 
+ol_subdomain = "example"  # required 
 ol_client_id = ""         # required
 
 ##### Smart Hooks Vars #######
