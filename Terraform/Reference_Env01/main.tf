@@ -227,11 +227,6 @@ resource onelogin_user_mappings app_access_mappingdoh {
     source = "${each.value.notes}"
     value = "TRUE-L3"
   }
-  conditions  {
-    operator = "~"
-    source = "email"
-    value = "ADM_"
-  }
 }
 
 ##### Mapping to automatically allocate the relevant App Access OneLogin Role (for App with specific app policy set) to a user when the related custom field for the Application is set to TRUE ######
@@ -249,11 +244,6 @@ resource onelogin_user_mappings app_access_birthright {
     operator = "~"
     source = "email"
     value = "@"
-  }
-  conditions  {
-    operator = "!~"
-    source = "email"
-    value = "adm_"
   }
 }
 
