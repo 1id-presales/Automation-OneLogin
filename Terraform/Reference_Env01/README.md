@@ -25,6 +25,6 @@ Create an API credential for Terraform to use in your target OneLogin environmen
 - To run a cleanup to remove this reference environment  from your target OneLogin environment run the command 
 <br><pre>`terraform destroy -var-file "target_ol_env.tfvars"`</pre>
 _Please note you may need to run this command twice to fully clean up the created resources._
-- Navigate to the Admin console of your target OneLogin environment and go to the events page and validate the resources have been removed successfully by looking for the "Smart Hook deleted" event.<br>
+- Navigate to the Admin console of your target OneLogin environment and go to the events page and validate the resources have been removed successfully by looking for the events and check the Apps/Roles/Mappings/Privileges/Users have been removed.<br>
 
 **END**
