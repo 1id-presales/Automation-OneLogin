@@ -44,7 +44,7 @@ ol_application_object = [
     notes = "custom_attribute_app_Wrike"
     visible = true
     allow_assumed_signin = false
-    birthright_app = "false"
+    birthright_app = "yes"
     app_owner = ""      # required -  email address of admin user responsible for configuring up the app connector
         },
 # Add more Apps here
@@ -61,7 +61,7 @@ ol_application_with_app_policy_object = [
     notes = "custom_attribute_app_Lever"
     visible = true
     allow_assumed_signin = false
-    birthright_app = "false"
+    birthright_app = ""
     app_owner = ""      # required -  email address of admin user responsible for configuring up the app connector
         },
 # Add more Apps here
