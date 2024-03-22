@@ -1,6 +1,17 @@
 # How To Instructions
 
 This example will create Applications, Roles, Mappings, a Test User and Privileges in your target OneLogin environment. <br>
+Each Application you define in your Application inventory in the tfvars file will be created along with
+**1 Application Access Role (AA-*****)**
+**2 Delegated Admin Roles (DA-APP-*****)**
+**3 Application Entitlements Roles (AE-*****)**
+**1 Mapping to Allocate the Application Access Role to Users**
+**2 Mappings to Allocate the Application Delegated Admin Roles to Users**
+**3 Mappings to Allocate the Application Entitlements Roles to Users**
+**1 Mappings to Allocate the Application Access Role to Users if the application has been defined a birthright app**
+**2 Privileges for each app that hold delegated administration permissions over the applicaion**
+
+
 
 Populate the required configuration for your reference environment into the relevant variables in the **target_ol_env.tfvars** file.<br>
 
