@@ -8,6 +8,8 @@ Populate the required configuration for your reference environment into the rele
 Create an API credential for Terraform to use in your target OneLogin environment with **"Manage All" permissions**. For detail see **https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials** 
 
 **Before** running this example it is required to **create some custom fields** in your target OneLogin environment. It is not currently possible to create these custom fields via the OneLogin Admin API and must be done in your OneLogin Admin console manually. <br>
+You should also create a app policy to be your baseline app policy in the environment and then some different app policies that can be allocated to different applications that you don't want to have the baseline app policy. Supply these App Policy IDs into the Apps Vars section of the tfvars file as needed.
+Please also create an example user policy and supply this user policy into the Smart Hooks Vars section of the tfvars file.
 
 The following custom fields should be created in your target OneLogin environment. <br>
 
