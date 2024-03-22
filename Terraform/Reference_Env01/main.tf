@@ -404,22 +404,7 @@ variable "ol_smart_hook_function" {
   default = <<EOF
     exports.handler = async (context) => {
 const NewUserPol_ID = process.env.NewUserPol;
-let user = context.user;
-const pwreset_pol_ID = 380872;
 console.log("Context: ", context);
-if (context.app.id === 3223090)
-{ user.policy_id = 380872;
-  console.log(" This user is logging in to PW Reset App so switching User Policy ID to " + user.policy_id);
-}
-
-else if (context.location.ip === "52.155.249.95")
-{ user.policy_id = 380919;
-  console.log(" This user is logging in from PAM Host so switching User Policy ID to " + user.policy_id);
-}
-
-else {
-		console.log("User not using a PW Reset App so This is not in scope. Do nothing");
-	}
 
   return {
     success: true,
