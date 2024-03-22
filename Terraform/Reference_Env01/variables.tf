@@ -20,24 +20,6 @@ variable "ol_app_entitlements_role_names" {
   description = "list of all the OL Application Entitlements Roles that were created"
 }
 
-variable "ol_pam_user_list" {
-  type = list(object({
-    name = string
-  }))
-}
-
-variable "ol_oneidentity_pam_admins_role_id" {
-  type = number
-}
-
-variable "ol_oneidentity_pam_users_role_id" {
-  type = number
-}
-
-variable "ol_oneidentity_pam_auditors_role_id" {
-  type = number
-}
-
 variable "ol_users" {
   type = list(object({
     username           = string
@@ -52,12 +34,6 @@ variable "ol_users" {
     status             = number
     custom_attributes  = map(string)
   }))
-}
-
-########### Groups Vars ###########
-
-variable "ol_adm_users_group_id" {
-  type = number
 }
 
 ########### Smart Hooks Vars ###########
