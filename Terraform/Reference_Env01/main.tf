@@ -69,7 +69,7 @@ resource onelogin_roles app_access2 {
   users = []
 }
 
-##### Create a App Access OneLogin Role for each application with baseline app policy created in the above step  #####
+##### Create a Application Entitlements ("Level 1" role) OneLogin Role for each application with baseline app policy created in the above step  #####
 resource onelogin_roles app_entitlements_1 {
   name = "AE-${each.value.name}-L1"
   depends_on = [
@@ -80,7 +80,7 @@ resource onelogin_roles app_entitlements_1 {
   users = []
 }
 
-##### Create a App Access OneLogin Role for each application with baseline app policy created in the above step  #####
+##### Create a Application Entitlements ("Level 2" role) OneLogin Role for each application with baseline app policy created in the above step  #####
 resource onelogin_roles app_entitlements_2 {
   name = "AE-${each.value.name}-L2"
   depends_on = [
@@ -91,7 +91,7 @@ resource onelogin_roles app_entitlements_2 {
   users = []
 }
 
-##### Create a App Access OneLogin Role for each application with baseline app policy created in the above step  #####
+##### Create a Application Entitlements ("Level 3" role) OneLogin Role for each application with baseline app policy created in the above step  #####
 resource onelogin_roles app_entitlements_3 {
   name = "AE-${each.value.name}-L3"
   depends_on = [
@@ -103,7 +103,7 @@ resource onelogin_roles app_entitlements_3 {
 }
 
 
-##### Create a Delegated Admin OneLogin Role for each application with baseline app policy created in the above step  #####
+##### Create a Delegated Admin (Full Privilege) OneLogin Role for each application with baseline app policy created in the above step  #####
 resource onelogin_roles da_apps1_admin1 {
   name = "DA-APP-${each.value.name} Admin1"
   depends_on = [
@@ -114,7 +114,7 @@ resource onelogin_roles da_apps1_admin1 {
   users = []
 }
 
-##### Create a Delegated Admin OneLogin Role for each application with baseline app policy created in the above step  #####
+##### Create a Delegated Admin (Read Only) OneLogin Role for each application with baseline app policy created in the above step  #####
 resource onelogin_roles da_apps1_admin2 {
   name = "DA-APP-${each.value.name} Admin2"
   depends_on = [
@@ -125,7 +125,7 @@ resource onelogin_roles da_apps1_admin2 {
   users = []
 }
 
-##### Create Delegated Admin OneLogin Role for each application with specific app policy created in the above step  #####
+##### Create Delegated Admin (Full Privilege) OneLogin Role for each application with specific app policy created in the above step  #####
 resource onelogin_roles da_apps2_admin1 {
   name = "DA-APP-${each.value.name} Admin1"
   depends_on = [
@@ -136,7 +136,7 @@ resource onelogin_roles da_apps2_admin1 {
   users = []
 }
 
-##### Create a Delegated Admin OneLogin Role for each application with baseline app policy created in the above step  #####
+##### Create a Delegated Admin (Read Only) OneLogin Role for each application with baseline app policy created in the above step  #####
 resource onelogin_roles da_apps2_admin2 {
   name = "DA-APP-${each.value.name} Admin2"
   depends_on = [
@@ -170,7 +170,6 @@ resource onelogin_user_mappings app_access_mapping {
     value = "${each.value.app_owner}"
   }
 }
-
 
 ##### Mapping to automatically allocate the relevant App Access OneLogin Role (for App with specific app policy set) to a user when the related custom field for the Application is set to TRUE ######
 resource onelogin_user_mappings app_access_mapping2 {
@@ -212,7 +211,6 @@ resource onelogin_user_mappings app_access_mappingdoh_app_owner {
 }
 
 #### Mapping to set delegated admin 1 role for each app
-
 resource onelogin_user_mappings app_access_mappingdoh {
   name = "DA-Admin1-${each.value.name}"
   enabled = true
@@ -270,7 +268,7 @@ resource onelogin_user_mappings app_access_birthright2 {
   }
 }
 
-#### Mapping to set delegated admin for app_owner user for each app
+#### Mapping to set Application Entitlements Level 1 Role to users 
 resource onelogin_user_mappings app_entitlements_1_mapping {
   name = "Allocate AE Role-${each.value.name}-L1"
   enabled = true
@@ -287,7 +285,7 @@ resource onelogin_user_mappings app_entitlements_1_mapping {
   }
 }
 
-#### Mapping to set delegated admin for app_owner user for each app
+#### Mapping to set Application Entitlements Level 2 Role to users 
 resource onelogin_user_mappings app_entitlements_2_mapping {
   name = "Allocate AE Role-${each.value.name}-L2"
   enabled = true
@@ -304,7 +302,7 @@ resource onelogin_user_mappings app_entitlements_2_mapping {
   }
 }
 
-#### Mapping to set delegated admin for app_owner user for each app
+#### Mapping to set Application Entitlements Level 3 Role to users 
 resource onelogin_user_mappings app_entitlements_3_mapping {
   name = "Allocate AE Role-${each.value.name}-L3"
   enabled = true
@@ -322,7 +320,7 @@ resource onelogin_user_mappings app_entitlements_3_mapping {
 }
 
 #### Privileges section ####
-#create the delegated admin for each app
+#create the privilege for an Admin1 for each application with baseline app policy
 resource onelogin_privileges apps1_admin1 {
     name = "APP-${each.value.name}-Admin1"
     description = "App Admin1 role for App-${each.value.name}"
@@ -337,7 +335,7 @@ resource onelogin_privileges apps1_admin1 {
     }
 }
 
-#create the delegated admin for each app
+#create the privilege for an Admin2(read Only) for each application with baseline app policy
 resource onelogin_privileges apps1_admin2 {
     name = "APP-${each.value.name}-Admin2"
     description = "App Admin2 role for App-${each.value.name}"
@@ -352,7 +350,7 @@ resource onelogin_privileges apps1_admin2 {
     }
 }
 
-#create the delegated admin for each app
+#create the privilege for an Admin1 for each application with specific app policy
 resource onelogin_privileges apps2_admin1 {
     name = "APP-${each.value.name}-Admin1"
     description = "App Admin1 role for App-${each.value.name}"
@@ -367,7 +365,7 @@ resource onelogin_privileges apps2_admin1 {
     }
 }
 
-#create the delegated admin for each app
+#create the privilege for an Admin2(read Only) for each application with specific app policy
 resource onelogin_privileges apps2_admin2 {
     name = "APP-${each.value.name}-Admin2"
     description = "App Admin2 role for App-${each.value.name}"
