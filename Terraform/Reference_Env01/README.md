@@ -1,5 +1,5 @@
 # Solution Description
-This solution shows how you can manage the lifecycle of Application onboarding into your OneLogin environment using Terraform. This solution can be used by existing OneLogin customers who have traditionally managed the application onboarding process manually in the OneLogin Admin Console and now want to shift to using an IaC/Devops approach or it can be used by new customers setting up OneLogin for the first time and assist in the process of migrating applications from the existing Access Management solution into OneLogin.
+This solution shows how you can manage the lifecycle of Application onboarding into your OneLogin environment using Terraform. This solution can be used by existing OneLogin customers who have traditionally managed the application onboarding process manually in the OneLogin Admin Console and now want to shift to using an IaC/Devops approach or it can be used by new customers setting up OneLogin for the first time and can greatly assist in the process of migrating applications from the existing Access Management solution into OneLogin.
 
 # How To Instructions
 
