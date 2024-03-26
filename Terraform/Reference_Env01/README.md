@@ -1,8 +1,9 @@
 # Solution Description
 This solution shows how to manage the lifecycle of Application onboarding into your OneLogin environment in an automated and structured way using Terraform. This solution can be used by existing OneLogin customers who have traditionally managed the application onboarding process manually in the OneLogin Admin Console and now want to shift to using an IaC/Devops approach or it can be used by new customers setting up OneLogin for the first time and can greatly assist in the process of migrating applications from the existing Access Management solution into OneLogin.<br>
 
-The solution will ensure that each time an application is created in the target OneLogin environment it will be accompanied by related roles, mappings and delegated admin privileges which will control who is granted access to the Application from an end user perspective and also who is granted the ability to manage the configuration of that Application from an delegated admin perspective.
+The solution will ensure that each time an application is created in the target OneLogin environment it will be accompanied by related roles, mappings and delegated admin privileges which will control who is granted access to the Application from an end user perspective and also who is granted the ability to manage the configuration of that Application from an delegated admin perspective.<br>
 
+The main principal of this solution is that a one to one relationship is defined between an application and a specific custom field in the OneLogin cloud directory. The process of allocating the particular application to an end user is then then simply a case of setting that custom field value to "True" which will then trigger the relevant Application Access mapping to fire and allocate the Application Access OneLogin Role to the user automatically.
 # How To Instructions
 
 This example will create a series of Applications, Roles, Mappings, a Test User and Privileges in your target OneLogin environment. <br>
