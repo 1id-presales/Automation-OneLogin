@@ -1355,3 +1355,211 @@
             "name": "Employers Choice Online"
         }
     ]
+
+#### OIDC Connector Type   ####
+
+[
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 108419,
+            "name": "OpenId Connect (OIDC)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/Hive/old_original.png",
+            "id": 111632,
+            "name": "Hive"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/forecast/old_original.png?1547228279",
+            "id": 117723,
+            "name": "Forecast"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/travelperk_oidc/old_original.png?1575486518",
+            "id": 129019,
+            "name": "TravelPerk"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/autotask_oidc/old_original.png?1577994768",
+            "id": 129618,
+            "name": "Autotask OIDC"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/kiite_oidc/old_original.png?1580184298",
+            "id": 130222,
+            "name": "Kiite"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/chargifi-oidc/old_original.png?1592413364",
+            "id": 131291,
+            "name": "Chargifi"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/vidizmo_oidc/old_original.png?1584499602",
+            "id": 132197,
+            "name": "VIDIZMO OIDC"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/openpath_oidc/old_original.png?1585108934",
+            "id": 132574,
+            "name": "Openpath OIDC"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 133643,
+            "name": "Host Work"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/vault_oidc/old_original.png?1599789109",
+            "id": 139999,
+            "name": "Vault Platform"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/staffcircle/old_original.png?1610563982",
+            "id": 146227,
+            "name": "StaffCircle (OIDC)"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/canny_scim_oidc/old_original.png?1616538854",
+            "id": 148546,
+            "name": "Canny"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/evas_oidc/old_original.png?1673505428",
+            "id": 148703,
+            "name": "EVAS (OIDC)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/databricks/old_original.png?1620146189",
+            "id": 149706,
+            "name": "Databricks"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/beyond-identity-user-console/old_original.png?1621888849",
+            "id": 150307,
+            "name": "Beyond Identity User Console"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/beyond-identity-admin-console/old_original.png?1623100825",
+            "id": 150620,
+            "name": "Beyond Identity Admin Console"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/twingate_scim_oidc/old_original.png?1626381667",
+            "id": 151276,
+            "name": "Twingate"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/papersave_oidc/old_original.png?1626753973",
+            "id": 151719,
+            "name": "PaperSave (SP Initiated OIDC)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/borrowbox_oidc/old_original.png?1629782229",
+            "id": 152626,
+            "name": "Borrowbox(OIDC)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/gong_saml-scim-dev/old_original.png?1644619163",
+            "id": 157885,
+            "name": "Gong"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/awork.io-scim/old_original.png?1654037638",
+            "id": 162596,
+            "name": "awork.io"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/strongdm-scim/old_original.png?1654040669",
+            "id": 162599,
+            "name": "StrongDM"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/oneidentitymanager/old_original.png?1659136364",
+            "id": 163962,
+            "name": "One Identity Manager"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/kadence_saml/old_original.png?1670222936",
+            "id": 167903,
+            "name": "Kadence"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 8,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 170652,
+            "name": "dev_OIDC(under construction)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/relaimai/old_original.png?1696543500",
+            "id": 174601,
+            "name": "Reclaim AI (OIDC only)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/scim_provisioner_samlscim2_reclaimai/old_original.png?1696543302",
+            "id": 174602,
+            "name": "Reclaim AI (SCIM provisioning only)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 8,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/classter_oidc/old_original.png?1697140200",
+            "id": 174804,
+            "name": "Classter"
+        }
+    ]
