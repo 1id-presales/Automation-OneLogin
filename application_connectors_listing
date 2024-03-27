@@ -356,3 +356,1002 @@
             "name": "OneLogin WS-Fed Test 1.1"
         }
     ]
+
+#### Forms Based Auth Connector Type ####
+
+[
+{
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/deployhq/old_original.png?1427328813",
+            "id": 2799,
+            "name": "Deploy HQ"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/nefsis/old_original.png?1427328813",
+            "id": 2807,
+            "name": "Nefsis"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/angieslist/old_original.png?1427292649",
+            "id": 2813,
+            "name": "Angie&#39;s List"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/xpenser/old_original.png?1427328813",
+            "id": 2814,
+            "name": "Xpenser"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/sitelutions/old_original.png?1427328813",
+            "id": 2815,
+            "name": "Sitelutions"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/xname/old_original.png?1427328814",
+            "id": 2819,
+            "name": "Xname.org"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/ted/old_original.png?1427328814",
+            "id": 2820,
+            "name": "TED"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/cybersource/old_original.png?1427292653",
+            "id": 2821,
+            "name": "CyberSource Business Center"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/alaska_airlines/old_original.png?1427328814",
+            "id": 2823,
+            "name": "Alaska Airlines"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/american-express/old_original.png?1427292661",
+            "id": 2824,
+            "name": "American Express"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/wikipedia/old_original.png?1427292665",
+            "id": 2827,
+            "name": "Wikipedia"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/zipcar/old_original.png?1427328814",
+            "id": 2829,
+            "name": "Zipcar"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/truphone/old_original.png?1427328814",
+            "id": 2831,
+            "name": "Truphone Local Anywhere"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/aaa_nocal/old_original.png?1427328814",
+            "id": 2832,
+            "name": "AAA Northern California, Nevada and Utah"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/walmart/old_original.png?1427292670",
+            "id": 2833,
+            "name": "Walmart"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/att_wireless/old_original.png?1427292674",
+            "id": 2834,
+            "name": "AT&amp;T Wireless"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/hertz/old_original.png?1427292679",
+            "id": 2835,
+            "name": "Hertz"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/avis/old_original.png?1427328814",
+            "id": 2839,
+            "name": "Avis Rent A Car"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/keybank/old_original.png?1427328814",
+            "id": 2840,
+            "name": "Key Bank"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/pbxes/old_original.png?1427328814",
+            "id": 2842,
+            "name": "Pbxes"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/ipness/old_original.png?1427328814",
+            "id": 2843,
+            "name": "Ipness Voice Over IP"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/questargas/old_original.png?1427328814",
+            "id": 2845,
+            "name": "Questar Gas"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/royalcaribbean/old_original.png?1427328814",
+            "id": 2846,
+            "name": "Royal Caribbean International"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/myregence/old_original.png?1427328814",
+            "id": 2847,
+            "name": "myRegence"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/contactual/old_original.png?1427328814",
+            "id": 2852,
+            "name": "Contactual"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/hp/old_original.png?1427328814",
+            "id": 2856,
+            "name": "HP Product Register"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/hpbusiness2business/old_original.png?1427328814",
+            "id": 2857,
+            "name": "HP Business to Business"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/planhq/old_original.png?1427328814",
+            "id": 2876,
+            "name": "PlanHQ"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/bigcommerce/old_original.png?1427292695",
+            "id": 2878,
+            "name": "BigCommerce"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/appsumo/old_original.png?1427328814",
+            "id": 2879,
+            "name": "Appsumo"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/hover/old_original.png?1427328814",
+            "id": 2882,
+            "name": "Hover"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/att_small_business/old_original.png?1427328814",
+            "id": 2884,
+            "name": "AT&amp;T Small Business Direct"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/mac_forums/old_original.png?1427328814",
+            "id": 2886,
+            "name": "Mac Forums"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/24x7servermanagement/old_original.png?1427292708",
+            "id": 2893,
+            "name": "24x7 Sserver Management"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/amiando/old_original.png?1427328814",
+            "id": 2894,
+            "name": "Amiando"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/webfilings/old_original.png?1427328814",
+            "id": 2897,
+            "name": "Wdesk"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/verify/old_original.png?1427328814",
+            "id": 2898,
+            "name": "Verify"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/emailsrvr_webmail/old_original.png?1427328814",
+            "id": 2900,
+            "name": "Emailsrvr.com Webmail"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/mind42/old_original.png?1427328814",
+            "id": 2901,
+            "name": "mind42.com"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/extendr/old_original.png?1427328814",
+            "id": 2902,
+            "name": "extendr"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/projectlocker/old_original.png?1427328814",
+            "id": 2903,
+            "name": "ProjectLocker"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/servicenow/old_original.png?1427292712",
+            "id": 2910,
+            "name": "ServiceNow"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/jumpbox/old_original.png?1427328814",
+            "id": 2911,
+            "name": "JumpBox"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/funnyordie/old_original.png?1427292716",
+            "id": 2912,
+            "name": "Funny or Die"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/wcla/old_original.png?1427328814",
+            "id": 2916,
+            "name": "WCLA Moodle"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/pearson_success/old_original.png?1427328814",
+            "id": 2921,
+            "name": "Pearson SuccessNet"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/comerica_bank/old_original.png?1427328814",
+            "id": 2928,
+            "name": "Comerica Bank Web Banking"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/braintree/old_original.png?1427292720",
+            "id": 2931,
+            "name": "Braintree"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/constant_contact_partner_console/old_original.png?1427328814",
+            "id": 2932,
+            "name": "Constant Contact Partner Console"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/Esignit/old_original.png?1427328814",
+            "id": 2933,
+            "name": "Esignit"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/rackspace_affiliate/old_original.png?1427328814",
+            "id": 2938,
+            "name": "Rackspace Affiliate Program"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/rackspace_partner/old_original.png?1427292725",
+            "id": 2940,
+            "name": "Rackspace Partner"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/epicenter/old_original.png?1427328814",
+            "id": 2941,
+            "name": "Epicenter Document Management"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/mediafunnel/old_original.png?1427328814",
+            "id": 2943,
+            "name": "MediaFunnel"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/appointy/old_original.png?1427292738",
+            "id": 2951,
+            "name": "Appointy"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/schoology/old_original.png?1427292742",
+            "id": 2955,
+            "name": "Schoology"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/alertpay/old_original.png?1427328814",
+            "id": 2957,
+            "name": "AlertPay"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/transfirst-translink/old_original.png?1427328814",
+            "id": 2958,
+            "name": "TransFirst TransLink"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/google_calendar/old_original.png?1481605665",
+            "id": 2960,
+            "name": "Google Calendar"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/aql/old_original.png?1427328814",
+            "id": 2961,
+            "name": "AQL"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/plancast/old_original.png?1427328814",
+            "id": 2965,
+            "name": "Plancast"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/phonebooth/old_original.png?1427328814",
+            "id": 2967,
+            "name": "Phonebooth"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/copper/old_original.png?1427328814",
+            "id": 2968,
+            "name": "Copper"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/agreeadate/old_original.png?1427328814",
+            "id": 2972,
+            "name": "agreeAdate"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/dayclips_office/old_original.png?1427328814",
+            "id": 2973,
+            "name": "DayClips Office"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/intuit_online_payroll/old_original.png?1427292750",
+            "id": 2974,
+            "name": "Intuit Online Payroll"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/oyatel_callmanager/old_original.png?1427328814",
+            "id": 2979,
+            "name": "Oyatel CallManager"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/24sevenoffice/old_original.png?1427328814",
+            "id": 2980,
+            "name": "24SevenOffice"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/schooldude/old_original.png?1427292754",
+            "id": 2981,
+            "name": "SchoolDude"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/targetprocess/old_original.png?1427292757",
+            "id": 2991,
+            "name": "TargetProcess"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/hosteurope/old_original.png?1541685178",
+            "id": 2995,
+            "name": "Host Europe"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/hasoffers/old_original.png?1427328814",
+            "id": 2996,
+            "name": "Has Offers"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/huntigton/old_original.png?1427328814",
+            "id": 3003,
+            "name": "Huntington National Bank"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328814",
+            "id": 3005,
+            "name": "CheckAppointments"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/questiaschool/old_original.png?1427328814",
+            "id": 3007,
+            "name": "Questia School"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/edublogs/old_original.png?1427328814",
+            "id": 3008,
+            "name": "Edublogs"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/mcafee-security-center/old_original.png?1427292761",
+            "id": 3010,
+            "name": "McAfee Security-as-a-Service"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/netdocuments/old_original.png?1427328814",
+            "id": 3011,
+            "name": "NetDocuments - Mobile"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/sipgate/old_original.png?1427328814",
+            "id": 3018,
+            "name": "Sipgate"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/misterwong-de/old_original.png?1427328814",
+            "id": 3019,
+            "name": "Mister Wong De"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/domainfactory/old_original.png?1427328814",
+            "id": 3020,
+            "name": "domainFACTORY"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/infusionsoft_community/old_original.png?1427328814",
+            "id": 3025,
+            "name": "Infusionsoft Community"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/apture/old_original.png?1427328814",
+            "id": 3026,
+            "name": "Apture"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/timetrade/old_original.png?1427328814",
+            "id": 3027,
+            "name": "TimeTrade"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/mydomain/old_original.png?1427328814",
+            "id": 3029,
+            "name": "MyDomain"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/presentermedia/old_original.png?1427292765",
+            "id": 3030,
+            "name": "PresenterMedia"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/postrank/old_original.png?1427328814",
+            "id": 3031,
+            "name": "PostRank Analytics"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/senderscore/old_original.png?1427328814",
+            "id": 3032,
+            "name": "SenderScore"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/SEO%20and%20Go/old_original.png?1427328814",
+            "id": 3033,
+            "name": "SEO and Go"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/ifbyphone-agents/old_original.png?1427328814",
+            "id": 3034,
+            "name": "Ifbyphone Agents"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/workflowy/old_original.png?1427328814",
+            "id": 3038,
+            "name": "WorkFlowy"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/sec-professionals-group/old_original.png?1427328814",
+            "id": 3042,
+            "name": "SEC Professionals Group"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/todo_online/old_original.png?1427328814",
+            "id": 3047,
+            "name": "Todo Online"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/my-memova/old_original.png?1427328814",
+            "id": 3062,
+            "name": "my memova"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/tradingtree/old_original.png?1427328814",
+            "id": 3063,
+            "name": "TradingTree"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/dataweb/old_original.png?1427328814",
+            "id": 3067,
+            "name": "RS DataWeb"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/covestor/old_original.png?1427328814",
+            "id": 3082,
+            "name": "Covestor"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/forex4noobs/old_original.png?1427328814",
+            "id": 3098,
+            "name": "Forex4Noobs Forum"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/vzaar/old_original.png?1427328814",
+            "id": 3104,
+            "name": "Vzaar"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/phanfare/old_original.png?1427328814",
+            "id": 3120,
+            "name": "Phanfare"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/pairNetworks/old_original.png?1427328814",
+            "id": 3121,
+            "name": "pair Networks"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/appcelerator-network/old_original.png?1427328814",
+            "id": 3123,
+            "name": "Appcelerator Network"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/wave-accounting/old_original.png?1427292777",
+            "id": 3124,
+            "name": "Wave Accounting"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 3126,
+            "name": "catchpoint"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/doitim/old_original.png?1427328814",
+            "id": 3156,
+            "name": "Doit.im"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/nominet/old_original.png?1427328814",
+            "id": 3159,
+            "name": "Nominet UK"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/voipfone/old_original.png?1427328814",
+            "id": 3167,
+            "name": "Voipfone"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/embedly/old_original.png?1427328814",
+            "id": 3174,
+            "name": "Embed.ly"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/pixelpipe/old_original.png?1427328814",
+            "id": 3202,
+            "name": "Pixelpipe"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/identified/old_original.png?1427328814",
+            "id": 3205,
+            "name": "Identified"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/gett/old_original.png?1427328814",
+            "id": 3221,
+            "name": "ge.tt"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/cardmember-service/old_original.png?1427328814",
+            "id": 3224,
+            "name": "Cardmember Service"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/hulu/old_original.png?1427292786",
+            "id": 3225,
+            "name": "Hulu"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/surreal-cms/old_original.png?1427328814",
+            "id": 3226,
+            "name": "Surreal CMS"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328814",
+            "id": 3235,
+            "name": "Sharewise"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/fotolia/old_original.png?1427292790",
+            "id": 3236,
+            "name": "Fotolia"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/livewatch/old_original.png?1427328814",
+            "id": 3237,
+            "name": "LiveWatch"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/odijoo/old_original.png?1427328814",
+            "id": 3242,
+            "name": "Odijoo"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/gotomypc/old_original.png?1427292794",
+            "id": 3247,
+            "name": "GoToMyPC"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/domainsnext/old_original.png?1427328814",
+            "id": 3249,
+            "name": "DomainsNext"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/personforce/old_original.png?1427328814",
+            "id": 3251,
+            "name": "Personforce"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/opencal/old_original.png?1427328814",
+            "id": 3264,
+            "name": "OpenCal"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/vesk/old_original.png?1427328814",
+            "id": 3299,
+            "name": "VESK"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/plone/old_original.png?1427328814",
+            "id": 3309,
+            "name": "Plone"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/insight/old_original.png?1427328814",
+            "id": 3326,
+            "name": "Insight"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/bristol_online_surveys/old_original.png?1427328814",
+            "id": 3329,
+            "name": "Bristol Online Surveys"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/skylight/old_original.png?1427328814",
+            "id": 3330,
+            "name": "Skylight"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/academy10/old_original.png?1427328814",
+            "id": 3331,
+            "name": "Academy10"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/gmx_uk/old_original.png?1427328814",
+            "id": 3332,
+            "name": "GMX UK"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/zaplee/old_original.png?1427328814",
+            "id": 3333,
+            "name": "Zaplee"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/kontera-advertisers/old_original.png?1427328814",
+            "id": 3335,
+            "name": "Kontera Advertisers"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/kontera-publishers/old_original.png?1427328814",
+            "id": 3337,
+            "name": "Kontera Publishers"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/dropsend/old_original.png?1427328814",
+            "id": 3339,
+            "name": "DropSend"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/glasscubes/old_original.png?1475747275",
+            "id": 3341,
+            "name": "Glasscubes"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/nextiva/old_original.png?1427292802",
+            "id": 3353,
+            "name": "Nextiva"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/brokerassist/old_original.png?1427328814",
+            "id": 3354,
+            "name": "BrokerAssist"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/smtp-com/old_original.png?1427328814",
+            "id": 3355,
+            "name": "SMTP.com"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328814",
+            "id": 3356,
+            "name": "BrokerOfficeSolutions Brokerage"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328814",
+            "id": 3358,
+            "name": "BrokerOfficeSolutions Agent"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/sightmax/old_original.png?1427328814",
+            "id": 3360,
+            "name": "Sight Max"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/gigaalert/old_original.png?1427328814",
+            "id": 3365,
+            "name": "Giga Alert"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 0,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/employerschoiceonline/old_original.png?1427328814",
+            "id": 3372,
+            "name": "Employers Choice Online"
+        }
+    ]
