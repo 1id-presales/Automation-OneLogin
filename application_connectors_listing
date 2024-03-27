@@ -1563,3 +1563,204 @@
             "name": "Classter"
         }
     ]
+
+### Basic Auth Connector Type ###
+
+[
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/aflac_business/old_original.png?1427328818",
+            "id": 6332,
+            "name": "Aflac Business"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/ultimate-soft/old_original.png?1427328821",
+            "id": 8241,
+            "name": "Ultimate Software"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/newsbank/old_original.png?1427328821",
+            "id": 8258,
+            "name": "NewsBank"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/nextdocs/old_original.png?1427328822",
+            "id": 8461,
+            "name": "NextDocs"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328828",
+            "id": 12967,
+            "name": "Titans - TST"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/adp-ipay/old_original.png?1427293927",
+            "id": 13305,
+            "name": "ADP iPay"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328828",
+            "id": 13448,
+            "name": "Rheemote"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/zultys/old_original.png?1427328829",
+            "id": 13694,
+            "name": "Zultys"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328832",
+            "id": 15499,
+            "name": "cuervo cold"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/emoderation-nintendo2/old_original.png?1427328832",
+            "id": 15953,
+            "name": "https://admin-j1.olv.app.nintendo.net/ emoderation"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328832",
+            "id": 15954,
+            "name": "https://keepwalkingproject-germany.iuworkhorse.com/admin/ emoderation"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328832",
+            "id": 15955,
+            "name": "https://keepwalkingproject-belgium.iuworkhorse.com/admin/ emoderation"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328832",
+            "id": 15956,
+            "name": "https://keepwalkingproject-netherlands.iuworkhorse.com/admin/"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/emoderation-nintendo5/old_original.png?1427328832",
+            "id": 16158,
+            "name": "https://admin.olv.nintendo.net/"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328832",
+            "id": 16160,
+            "name": "https://portal-j1.olv.app.nintendo.net/debug/login"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328833",
+            "id": 16418,
+            "name": "https://kong.realadventure.co.uk/"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328853",
+            "id": 29886,
+            "name": "chunkychode fs"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/zalestest/old_original.png?1427328857",
+            "id": 32199,
+            "name": "Zales Supplier"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328857",
+            "id": 32286,
+            "name": "First Mortgage Corp."
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/buildingchampions-user/old_original.png?1444034015",
+            "id": 62703,
+            "name": "Building Champions (User)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 64865,
+            "name": "Aflac Business - test"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/travelinc/old_original.png?1452521483",
+            "id": 66335,
+            "name": "Travel Inc"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 71957,
+            "name": "WWEXSHIP"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/attendanceOnDemand/old_original.png?1465580625",
+            "id": 74534,
+            "name": "Attendance on Demand"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 76551,
+            "name": "Aetna ezStart"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/firmex/old_original.png?1471465007",
+            "id": 77172,
+            "name": "Firmex"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 97443,
+            "name": "Amplifon Basic"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 6,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/basicauthentication/old_original.png?1611957726",
+            "id": 121650,
+            "name": "Basic Authentication(deprecated)"
+        }
+    ]
