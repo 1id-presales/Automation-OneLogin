@@ -1,0 +1,213 @@
+#### API Connector Type ####
+[
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/pbworks/old_original.png?1427328812",
+            "id": 1987,
+            "name": "PBWorks"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328813",
+            "id": 2594,
+            "name": "OneLogin Federated Authentication"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/ecollege/old_original.png?1427328818",
+            "id": 5607,
+            "name": "eCollege"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/netsuite/old_original.png?1427328820",
+            "id": 7409,
+            "name": "NetSuite"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/schoology/old_original.png?1427328820",
+            "id": 7432,
+            "name": "Schoology"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/essential_learning/old_original.png?1427328832",
+            "id": 15837,
+            "name": "Essential Learning"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/getsatisfaction/old_original.png?1427328837",
+            "id": 19201,
+            "name": "Get Satisfaction"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328868",
+            "id": 38334,
+            "name": "QliqsoftTest"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/GOSAVO%20Partner%20Focus/old_original.png?1422979357",
+            "id": 51364,
+            "name": "GOSAVO Partner Focus"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/lastPass/old_original.png?1519860558",
+            "id": 106784,
+            "name": "LastPass (Provisioning Only)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/1password/old_original.png?1575651448",
+            "id": 128993,
+            "name": "1Password Business"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/visio_shortcut_2019/old_original.png?1576211409",
+            "id": 129283,
+            "name": "Visio for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/ms_rdp_client/old_original.png?1580835806",
+            "id": 129734,
+            "name": "Microsoft RDG Server"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/powerbi_shortcut_2020/old_original.png?1600927558",
+            "id": 140441,
+            "name": "PowerBI for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/excel_o365_shortcut/old_original.png?1605070041",
+            "id": 142535,
+            "name": "Excel for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/word_o365_shortcut/old_original.png?1605070608",
+            "id": 142536,
+            "name": "Word for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/powerpoint_o365_shortcut/old_original.png?1605070858",
+            "id": 142537,
+            "name": "Powerpoint for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/onedrive_o365_shortcut/old_original.png?1605071114",
+            "id": 142538,
+            "name": "OneDrive for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/onenote_o365_shortcut/old_original.png?1605071615",
+            "id": 142539,
+            "name": "OneNote for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/sharepoint_o365_shortcut/old_original.png?1605072027",
+            "id": 142540,
+            "name": "Sharepoint for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/teams_o365_shortcut/old_original.png?1605072747",
+            "id": 142541,
+            "name": "Teams for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/dynamics_o365_shortcut/old_original.png?1613444899",
+            "id": 147188,
+            "name": "Dynamics for Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/lattice_google/old_original.png?1628829574",
+            "id": 152402,
+            "name": "Lattice (Sign in with Google)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/unbounce_google/old_original.png?1629187342",
+            "id": 152476,
+            "name": "Unbounce(sign in with Google)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/monday_google_formservice/old_original.png?1632128337",
+            "id": 153525,
+            "name": "Monday (Sign in with Google)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/mailguard_ms_formservice/old_original.png?1635406147",
+            "id": 155638,
+            "name": "MailGuard(Sign in with Microsoft Work)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/clockwise-scim/old_original.png?1644604917",
+            "id": 159755,
+            "name": "Clockwise"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/Privacera/old_original.png?1654638923",
+            "id": 162789,
+            "name": "Privacera"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/lineworks_20220617_formservice/old_original.png?1655449937",
+            "id": 163030,
+            "name": "LINE WORKS(SP initiated launcher)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 3,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/msolapps_sso_initiator/old_original.png?1656294736",
+            "id": 163172,
+            "name": "Microsoft Online Apps"
+        }
+    ]
