@@ -211,3 +211,148 @@
             "name": "Microsoft Online Apps"
         }
     ]
+
+#### WSFED Connector Type ####
+
+ [
+        {
+            "allows_new_parameters": true,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328856",
+            "id": 31512,
+            "name": "OneLogin WS-Fed Test 2.0"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/rdwebaccess/old_original.png?1427328862",
+            "id": 34885,
+            "name": "RD Web Access (2012)"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/mediusflow/old_original.png?1418075499",
+            "id": 49310,
+            "name": "mediusflow"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1427328887",
+            "id": 49773,
+            "name": "DiData"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 56095,
+            "name": "unit 4 Agreesso Test"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 61565,
+            "name": "Soti - RD Web Access (2012)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/Dynamics/old_original.png?1465565855",
+            "id": 72034,
+            "name": "Microsoft Dynamics CRM"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 77297,
+            "name": "SharePoint (All Attributes) Protocol"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/glsondemand/old_original.png?1478558643",
+            "id": 79820,
+            "name": "GLS On Demand"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/TeleTracking/old_original.png?1478559650",
+            "id": 80939,
+            "name": "TeleTracking"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/oracle_fusion/old_original.png?1483991976",
+            "id": 83842,
+            "name": "Oracle Fusion Gen1"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 87514,
+            "name": "OneLogin WS-Fed Test 2.0 cambridge"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 88690,
+            "name": "OneLogin WS-Fed Test 2.0 cambridge 4"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/mobileiron_office_365/old_original.png?1503337121",
+            "id": 95996,
+            "name": "MobileIron for Office 365"
+        },
+        {
+            "allows_new_parameters": true,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/office_365_v2/old_original.png?1516302971",
+            "id": 98941,
+            "name": "Office 365 V2"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/office_365_v2_licenses_only/old_original.png?1516303293",
+            "id": 103610,
+            "name": "Office 365 V2 - Licenses Only"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png?1513876858",
+            "id": 104034,
+            "name": "UNIT4 Business World"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 116945,
+            "name": "RD Web Access (2016)"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "https://cdn01.onelogin.com/images/icons/square/campusnexus/old_original.png?1550282156",
+            "id": 118871,
+            "name": "CampusNexus"
+        },
+        {
+            "allows_new_parameters": false,
+            "auth_method": 7,
+            "icon_url": "/images/missing_connector_icon/square/old_original.png",
+            "id": 150098,
+            "name": "OneLogin WS-Fed Test 1.1"
+        }
+    ]
