@@ -1,1 +1,24 @@
-tbc
+---
+- hosts: localhost
+  vars:
+    okta_domain: xxxxxxxxxx.okta.com
+    okta_api_token: tbc
+
+  tasks:
+    - name: Retrieve list of applications
+      uri:
+        url: https://{{ okta_domain }}/api/v1/apps
+        headers:
+          Accept: "application/json"
+          Content-Type: "application/json"
+          Authorization: "SSWS {{ okta_api_token }}"
+        method: GET
+        return_content: yes
+      register: okta_apps_response
+
+    - name: Filter application list to include required attributes
+      set_fact:
+        filtered_applications: "{{ okta_apps_response.json | json_query('[].{connector_id: name, visible: visibility.hide.web, name: label, notes: \"\", app_owner: \"\", birthright_app: \"\", allow_assumed_signin: \"\"}') }}"
+
+    - debug:
+        var: filtered_applications
