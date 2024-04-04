@@ -15,21 +15,6 @@ variable "ol_client_secret" {
 
 ########### User Vars ########
 
-variable "ol_users" {
-  type = list(object({
-    username           = string
-    firstname          = string
-    lastname           = string
-    email              = string
-    department         = string
-    phone              = string
-    title              = string
-    company            = string
-    state              = number
-    status             = number
-    custom_attributes  = map(string)
-  }))
-}
 
 ########### Smart Hooks Vars ###########
 
@@ -51,30 +36,14 @@ variable "ol_baseline_app_policy_id" {
   type = number
 }
 
-variable "ol_application_object" {
-  type = list(object({
-    connector_id = number
-    name = string
-    visible = bool
-    description = string
-    notes = string
-    allow_assumed_signin = bool
-    birthright_app = string
-    app_owner = string
-  }))
+variable "ol_medium_risk_app_policy_id" {
+  type = number
 }
 
-variable "ol_application_with_app_policy_object" {
-  type = list(object({
-    connector_id = number
-    policy_id = number
-    name = string
-    visible = bool
-    description = string
-    notes = string
-    allow_assumed_signin = bool
-    tab_id = number
-    birthright_app = string
-    app_owner = string
-  }))
+variable "ol_high_risk_app_policy_id" {
+  type = number
+}
+
+variable "ol_custom_tab1_id" {
+  type = number
 }
