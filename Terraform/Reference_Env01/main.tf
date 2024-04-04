@@ -34,14 +34,14 @@ url= "https://${var.ol_subdomain}.onelogin.com"
 ##### Create a number of Company Apps in your OneLogin environment based on the Applications defined in tfvars file  #####
 resource "restapi_object" "company_apps" {
   path = "/api/2/apps"
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   data = "{ \"connector_id\": \"${each.value.connector_id}\", \"name\":\"${each.value.name}\", \"policy_id\": \"${var.ol_baseline_app_policy_id}\", \"visible\":\"${each.value.visible}\", \"description\":\"${each.value.description}\", \"notes\":\"${each.value.notes}\", \"allow_assumed_signin\":\"${each.value.allow_assumed_signin}\"}"
 }
 ##### Add Company Apps without configuration with specific app policy id set #####
 ##### Create a number of Company Apps in your OneLogin environment based on the Applications defined in tfvars file  #####
 resource "restapi_object" "company_apps2" {
   path = "/api/2/apps"
-  for_each = { for inst in var.ol_application_with_app_policy_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_with_app_policy_object : inst.notes => inst }
   data = "{ \"connector_id\": \"${each.value.connector_id}\", \"name\":\"${each.value.name}\", \"policy_id\": \"${each.value.policy_id}\", \"visible\":\"${each.value.visible}\", \"description\":\"${each.value.description}\", \"notes\":\"${each.value.notes}\", \"allow_assumed_signin\":\"${each.value.allow_assumed_signin}\", \"tab_id\":\"${each.value.tab_id}\"}"
 }
 
@@ -53,7 +53,7 @@ resource onelogin_roles app_access {
   depends_on = [
     restapi_object.company_apps
   ]
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   apps = [restapi_object.company_apps["${each.value.notes}"].id]
   users = []
 }
@@ -64,7 +64,7 @@ resource onelogin_roles app_access2 {
   depends_on = [
     restapi_object.company_apps2
   ]
-  for_each = { for inst in var.ol_application_with_app_policy_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_with_app_policy_object : inst.notes => inst }
   apps = [restapi_object.company_apps2["${each.value.notes}"].id]
   users = []
 }
@@ -75,7 +75,7 @@ resource onelogin_roles app_entitlements_1 {
   depends_on = [
     restapi_object.company_apps
   ]
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   apps = []
   users = []
 }
@@ -86,7 +86,7 @@ resource onelogin_roles app_entitlements_2 {
   depends_on = [
     restapi_object.company_apps
   ]
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   apps = []
   users = []
 }
@@ -97,7 +97,7 @@ resource onelogin_roles app_entitlements_3 {
   depends_on = [
     restapi_object.company_apps
   ]
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   apps = []
   users = []
 }
@@ -109,7 +109,7 @@ resource onelogin_roles da_apps1_admin1 {
   depends_on = [
     restapi_object.company_apps
   ]
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   apps = []
   users = []
 }
@@ -120,7 +120,7 @@ resource onelogin_roles da_apps1_admin2 {
   depends_on = [
     restapi_object.company_apps
   ]
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   apps = []
   users = []
 }
@@ -131,7 +131,7 @@ resource onelogin_roles da_apps2_admin1 {
   depends_on = [
     restapi_object.company_apps2
   ]
-  for_each = { for inst in var.ol_application_with_app_policy_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_with_app_policy_object : inst.notes => inst }
   apps = []
   users = []
 }
@@ -142,7 +142,7 @@ resource onelogin_roles da_apps2_admin2 {
   depends_on = [
     restapi_object.company_apps
   ]
-  for_each = { for inst in var.ol_application_with_app_policy_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_with_app_policy_object : inst.notes => inst }
   apps = []
   users = []
 }
@@ -154,7 +154,7 @@ resource onelogin_user_mappings app_access_mapping {
   name = "APP-ACCESS-${each.value.name}"
   enabled = true
   match = "any"
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   actions  {
     value = [onelogin_roles.app_access["${each.value.notes}"].id]
     action = "add_role"
@@ -176,7 +176,7 @@ resource onelogin_user_mappings app_access_mapping2 {
   name = "APP-ACCESS-${each.value.name}"
   enabled = true
   match = "any"
-  for_each = { for inst in var.ol_application_with_app_policy_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_with_app_policy_object : inst.notes => inst }
   actions  {
     value = [onelogin_roles.app_access2["${each.value.notes}"].id]
     action = "add_role"
@@ -198,7 +198,7 @@ resource onelogin_user_mappings app_access_mappingdoh_app_owner {
   name = "DA-App-Owner-${each.value.name}"
   enabled = true
   match = "all"
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   actions  {
     value = [onelogin_roles.da_apps1_admin1["${each.value.notes}"].id]
     action = "add_role"
@@ -215,7 +215,7 @@ resource onelogin_user_mappings app_access_mappingdoh {
   name = "DA-Admin1-${each.value.name}"
   enabled = true
   match = "all"
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   actions  {
     value = [onelogin_roles.da_apps1_admin1["${each.value.notes}"].id]
     action = "add_role"
@@ -232,7 +232,7 @@ resource onelogin_user_mappings app_access_birthright {
   name = "BIRTHRIGHT-APP-ACCESS-${each.value.name}"
   enabled = true
   match = "all"
-  for_each = { for key, val in var.ol_application_object :
+  for_each = { for key, val in local.ol_application_object :
   	key => val if val.birthright_app == "yes" }
   actions  {
     value = [onelogin_roles.app_access["${each.value.notes}"].id]
@@ -250,7 +250,7 @@ resource onelogin_user_mappings app_access_birthright2 {
   name = "BIRTHRIGHT-APP-ACCESS-${each.value.name}"
   enabled = true
   match = "all"
-  for_each = { for key, val in var.ol_application_with_app_policy_object :
+  for_each = { for key, val in local.ol_application_with_app_policy_object :
   	key => val if val.birthright_app == "true" }
   actions  {
     value = [onelogin_roles.app_access2["${each.value.notes}"].id]
@@ -273,7 +273,7 @@ resource onelogin_user_mappings app_entitlements_1_mapping {
   name = "Allocate AE Role-${each.value.name}-L1"
   enabled = true
   match = "all"
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   actions  {
     value = [onelogin_roles.app_entitlements_1["${each.value.notes}"].id]
     action = "add_role"
@@ -290,7 +290,7 @@ resource onelogin_user_mappings app_entitlements_2_mapping {
   name = "Allocate AE Role-${each.value.name}-L2"
   enabled = true
   match = "all"
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   actions  {
     value = [onelogin_roles.app_entitlements_2["${each.value.notes}"].id]
     action = "add_role"
@@ -307,7 +307,7 @@ resource onelogin_user_mappings app_entitlements_3_mapping {
   name = "Allocate AE Role-${each.value.name}-L3"
   enabled = true
   match = "all"
-  for_each = { for inst in var.ol_application_object : inst.notes => inst }
+  for_each = { for inst in local.ol_application_object : inst.notes => inst }
   actions  {
     value = [onelogin_roles.app_entitlements_3["${each.value.notes}"].id]
     action = "add_role"
@@ -324,7 +324,7 @@ resource onelogin_user_mappings app_entitlements_3_mapping {
 resource onelogin_privileges apps1_admin1 {
     name = "APP-${each.value.name}-Admin1"
     description = "App Admin1 role for App-${each.value.name}"
-    for_each = { for inst in var.ol_application_object : inst.notes => inst }
+    for_each = { for inst in local.ol_application_object : inst.notes => inst }
     role_ids = [onelogin_roles.da_apps1_admin1["${each.value.notes}"].id]
     privilege {
         statement {
@@ -339,7 +339,7 @@ resource onelogin_privileges apps1_admin1 {
 resource onelogin_privileges apps1_admin2 {
     name = "APP-${each.value.name}-Admin2"
     description = "App Admin2 role for App-${each.value.name}"
-    for_each = { for inst in var.ol_application_object : inst.notes => inst }
+    for_each = { for inst in local.ol_application_object : inst.notes => inst }
     role_ids = [onelogin_roles.da_apps1_admin2["${each.value.notes}"].id]
     privilege {
         statement {
@@ -354,7 +354,7 @@ resource onelogin_privileges apps1_admin2 {
 resource onelogin_privileges apps2_admin1 {
     name = "APP-${each.value.name}-Admin1"
     description = "App Admin1 role for App-${each.value.name}"
-    for_each = { for inst in var.ol_application_with_app_policy_object : inst.notes => inst }
+    for_each = { for inst in local.ol_application_with_app_policy_object : inst.notes => inst }
     role_ids = []
     privilege {
         statement {
@@ -369,7 +369,7 @@ resource onelogin_privileges apps2_admin1 {
 resource onelogin_privileges apps2_admin2 {
     name = "APP-${each.value.name}-Admin2"
     description = "App Admin2 role for App-${each.value.name}"
-    for_each = { for inst in var.ol_application_with_app_policy_object : inst.notes => inst }
+    for_each = { for inst in local.ol_application_with_app_policy_object : inst.notes => inst }
     role_ids = []
     privilege {
         statement {
@@ -423,16 +423,16 @@ resource "restapi_object" "oneloginsmarthook_pa" {
 #### USERS #####
 
 resource onelogin_users "users" {
-  count = length(var.ol_users)
-  username  = var.ol_users[count.index].username
-  firstname = var.ol_users[count.index].firstname
-  lastname  = var.ol_users[count.index].lastname
-  email     = var.ol_users[count.index].email
-  department     = var.ol_users[count.index].department
-  title     = var.ol_users[count.index].title
-  phone     = var.ol_users[count.index].phone
-  company     = var.ol_users[count.index].company
-  state     = var.ol_users[count.index].state
-  status     = var.ol_users[count.index].status
-  custom_attributes = var.ol_users[count.index].custom_attributes
+  count = length(local.ol_users)
+  username  = local.ol_users[count.index].username
+  firstname = local.ol_users[count.index].firstname
+  lastname  = local.ol_users[count.index].lastname
+  email     = local.ol_users[count.index].email
+  department     = local.ol_users[count.index].department
+  title     = local.ol_users[count.index].title
+  phone     = local.ol_users[count.index].phone
+  company     = local.ol_users[count.index].company
+  state     = local.ol_users[count.index].state
+  status     = local.ol_users[count.index].status
+  custom_attributes = local.ol_users[count.index].custom_attributes
 }
