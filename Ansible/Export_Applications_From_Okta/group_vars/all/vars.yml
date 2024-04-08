@@ -1,0 +1,12 @@
+---
+  connector_id_lookup:
+      salesforce: 29255
+      servicenow_ud: 2910
+      oidc_client: 108419
+      amazon_aws_sso: 78887
+      google: 907
+      zendesk: 4513
+      workday: 2885
+      twitter: 150935
+      datadog: 116169
+      ghecenterprisesaml: 84355
