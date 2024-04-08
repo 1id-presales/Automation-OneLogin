@@ -1,0 +1,146 @@
+[
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "oidc_client",
+        "name": "OneLogin",
+        "notes": null,
+        "visible": true
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "oidc_client",
+        "name": "Reflection",
+        "notes": null,
+        "visible": true
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "oidc_client",
+        "name": "Terraform",
+        "notes": null,
+        "visible": true
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "partnersummit160_testsaml_1",
+        "name": "Test SAML",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "partnersummit160_cedarstone_1",
+        "name": "Cedarstone",
+        "notes": null,
+        "visible": true
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "partnersummit160_testprovision_1",
+        "name": "test provision",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "partnersummit160_workaroundscam_1",
+        "name": "workaround scam",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "twitter",
+        "name": "Tweeeeeet!",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "salesforce",
+        "name": "Salesforce.com",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "servicenow_ud",
+        "name": "ServiceNow UD",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "workday",
+        "name": "Workday",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "zendesk",
+        "name": "Zendesk",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "google",
+        "name": "Google Workspace",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "datadog",
+        "name": "Datadog",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "amazon_aws_sso",
+        "name": "AWS IAM Identity Center",
+        "notes": null,
+        "visible": false
+    },
+    {
+        "allow_assumed_signin": null,
+        "app_owner": null,
+        "birthright_app": null,
+        "connector_id": "ghecenterprisesaml",
+        "name": "Github Enterprise Cloud - Enterprise Accounts",
+        "notes": null,
+        "visible": false
+    }
+]
