@@ -19,6 +19,8 @@
     - name: Filter application list to include required attributes
       set_fact:
         filtered_applications: "{{ okta_apps_response.json | json_query('[].{connector_id: name, visible: visibility.hide.web, name: label, notes: \"\", app_owner: \"\", birthright_app: \"\", allow_assumed_signin: \"\"}') }}"
-
-    - debug:
-        var: filtered_applications
+   
+    - name: Write filtered applications to a JSON file
+      copy:
+        content: "{{ filtered_applications | to_nice_json}}"
+        dest: "applications_filtered.json"
