@@ -22,7 +22,6 @@ ol_application_object = [
   {
             connector_id : 68332,
             name : "Wrike"
-    description = "BU: Sales operations"
     notes = "custom_attribute_app_Wrike"
     visible = true
     allow_assumed_signin = false
@@ -38,7 +37,6 @@ ol_application_with_app_policy_object = [
             name : "Lever"
             policy_id = var.ol_high_risk_app_policy_id
     tab_id = var.ol_custom_tab1_id
-    description = "BU: Sales operations"
     notes = "custom_attribute_app_Lever"
     visible = true
     allow_assumed_signin = false
