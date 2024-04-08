@@ -35,14 +35,14 @@ url= "https://${var.ol_subdomain}.onelogin.com"
 resource "restapi_object" "company_apps" {
   path = "/api/2/apps"
   for_each = { for inst in local.ol_application_object : inst.notes => inst }
-  data = "{ \"connector_id\": \"${each.value.connector_id}\", \"name\":\"${each.value.name}\", \"policy_id\": \"${var.ol_baseline_app_policy_id}\", \"visible\":\"${each.value.visible}\", \"description\":\"${each.value.description}\", \"notes\":\"${each.value.notes}\", \"allow_assumed_signin\":\"${each.value.allow_assumed_signin}\"}"
+  data = "{ \"connector_id\": \"${each.value.connector_id}\", \"name\":\"${each.value.name}\", \"policy_id\": \"${var.ol_baseline_app_policy_id}\", \"visible\":\"${each.value.visible}\", \"notes\":\"${each.value.notes}\", \"allow_assumed_signin\":\"${each.value.allow_assumed_signin}\"}"
 }
 ##### Add Company Apps without configuration with specific app policy id set #####
 ##### Create a number of Company Apps in your OneLogin environment based on the Applications defined in tfvars file  #####
 resource "restapi_object" "company_apps2" {
   path = "/api/2/apps"
   for_each = { for inst in local.ol_application_with_app_policy_object : inst.notes => inst }
-  data = "{ \"connector_id\": \"${each.value.connector_id}\", \"name\":\"${each.value.name}\", \"policy_id\": \"${each.value.policy_id}\", \"visible\":\"${each.value.visible}\", \"description\":\"${each.value.description}\", \"notes\":\"${each.value.notes}\", \"allow_assumed_signin\":\"${each.value.allow_assumed_signin}\", \"tab_id\":\"${each.value.tab_id}\"}"
+  data = "{ \"connector_id\": \"${each.value.connector_id}\", \"name\":\"${each.value.name}\", \"policy_id\": \"${each.value.policy_id}\", \"visible\":\"${each.value.visible}\", \"notes\":\"${each.value.notes}\", \"allow_assumed_signin\":\"${each.value.allow_assumed_signin}\", \"tab_id\":\"${each.value.tab_id}\"}"
 }
 
 ##### ROLES ######
