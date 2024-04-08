@@ -5,9 +5,9 @@
     okta_api_token: tbc
 
   tasks:
-    - name: Retrieve list of applications
+    - name: Retrieve list of applications from Okta
       uri:
-        url: https://{{ okta_domain }}/api/v1/apps
+        url: "https://{{ okta_domain }}/api/v1/apps"
         headers:
           Accept: "application/json"
           Content-Type: "application/json"
@@ -19,8 +19,29 @@
     - name: Filter application list to include required attributes
       set_fact:
         filtered_applications: "{{ okta_apps_response.json | json_query('[].{connector_id: name, visible: visibility.hide.web, name: label, notes: \"\", app_owner: \"\", birthright_app: \"\", allow_assumed_signin: \"\"}') }}"
-   
-    - name: Write filtered applications to a JSON file
+
+    - name: Initialize filtered_applications_with_ids list
+      set_fact:
+        filtered_applications_with_ids: []
+
+    - name: Replace connector IDs with lookup values and store in a list
+      loop: "{{ filtered_applications }}"
+      set_fact:
+        filtered_applications_with_ids: "{{ filtered_applications_with_ids + [{'connector_id': connector_id_lookup[item.connector_id] | default(item.connector_id), 'visible': item.visible, 'name': item.name, 'notes': item.notes, 'app_owner': item.app_owner, 'birthright_app': item.birthright_app, 'allow_assumed_signin': item.allow_assumed_signin}] }}"
+
+    - name: Display filtered applications with IDs
+      debug:
+        var: filtered_applications_with_ids
+    
+    - name: Update notes field if null
+      set_fact:
+        filtered_applications_with_notes_prefix: "{{ filtered_applications_with_notes_prefix | default([]) + [{ 'connector_id': item.connector_id, 'visible': item.visible, 'app_owner': item.app_owner, 'birthright_app': item.birthright_app, 'name': item.name, 'allow_assumed_signin': item.allow_assumed_signin, 'notes': 'custom_attribute_app_' + item.name.replace(' ', '_') if item.notes is none else item.notes }] }}"
+      loop: "{{ filtered_applications_with_ids }}"
+      loop_control:
+        loop_var: item
+      when: "'okta' not in item.name.lower()"
+
+    - name: Write filtered applications with IDs to a JSON file
       copy:
-        content: "{{ filtered_applications | to_nice_json}}"
-        dest: "applications_filtered.json"
+        content: "{{ filtered_applications_with_notes_prefix | to_nice_json }}"
+        dest: "applications_filtered_with_ids.json"
