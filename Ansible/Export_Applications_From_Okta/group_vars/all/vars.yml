@@ -1,3 +1,4 @@
+########## For custom SAML applications use OneLogin Connector ID 110016. For custom SCIM applications use Connector ID 156557
 ---
   connector_id_lookup:
       salesforce: 29255
