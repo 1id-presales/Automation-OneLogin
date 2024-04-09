@@ -35,9 +35,9 @@
       debug:
         var: filtered_applications_with_ids
     
-    - name: Update notes field if null
+    - name: Update notes field if null and set app_owner, birthright_app, and allow_assumed_signin to default values
       set_fact:
-        filtered_applications_with_notes_prefix: "{{ filtered_applications_with_notes_prefix | default([]) + [{ 'connector_id': item.connector_id, 'visible': item.visible, 'app_owner': item.app_owner, 'birthright_app': item.birthright_app, 'name': item.name, 'allow_assumed_signin': item.allow_assumed_signin, 'notes': 'custom_attribute_app_' + item.name.replace(' ', '_') if item.notes is none else item.notes }] }}"
+        filtered_applications_with_notes_prefix: "{{ filtered_applications_with_notes_prefix | default([]) + [{ 'connector_id': item.connector_id, 'visible': item.visible, 'app_owner': '' if item.app_owner is none else item.app_owner, 'birthright_app': '' if item.birthright_app is none else item.birthright_app, 'name': item.name, 'allow_assumed_signin': false if item.allow_assumed_signin is none else item.allow_assumed_signin, 'notes': 'custom_attribute_app_' + item.name.replace(' ', '_') if item.notes is none else item.notes }] }}"
       loop: "{{ filtered_applications_with_ids }}"
       loop_control:
         loop_var: item
