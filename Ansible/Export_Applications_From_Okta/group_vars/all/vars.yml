@@ -1,7 +1,7 @@
 ---
   connector_id_lookup:
       salesforce: 29255
-      servicenow_ud: 2910
+      servicenow_ud: 49734
       oidc_client: 108419
       amazon_aws_sso: 78887
       google: 907
