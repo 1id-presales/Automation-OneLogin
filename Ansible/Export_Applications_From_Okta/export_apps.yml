@@ -1,8 +1,10 @@
 ---
 - hosts: localhost
+  vars_prompt:
+    - name: okta_api_token
+      prompt: Enter the Okta API Key
   vars:
     okta_domain: xxxxxxxxxx.okta.com
-    okta_api_token: tbc
 
   tasks:
     - name: Retrieve list of applications from Okta
