@@ -68,7 +68,8 @@ pluse add more app_xxxx custom fields for each app you want to add in your tfvar
 <br><pre>`terraform apply -var-file "terraform.tfvars"`</pre> 
 - Navigate to the Admin console of your target OneLogin environment and go to the events page and validate the expected resources have been created.
 - To add some more applications to your environment go to the locals.tf file and add some more objects to the ol_application_object and ol_application_with_app_policy_object as required. To update your OneLogin environment with the applications added to your locals.tf file then run the below command
-<br><pre>`terraform apply -var-file "terraform.tfvars"`</pre> 
+<br><pre>`terraform apply -var-file "terraform.tfvars"`</pre>
+- Navigate to the Admin console of your target OneLogin environment and validate the additional application resources have been created.
 - To run a cleanup to remove this reference environment  from your target OneLogin environment run the command 
 <br><pre>`terraform destroy -var-file "terraform.tfvars"`</pre>
 _Please note you may need to run this command twice to fully clean up the created resources._
