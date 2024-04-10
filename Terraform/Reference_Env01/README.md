@@ -49,7 +49,7 @@ The following custom fields should be created in your target OneLogin environmen
 **personal_mail** <br>
 **app_Wrike** <br>
 **app_Lever** <br>
-pluse add more app_xxxx custom fields for each app you want to add in your tfvars file for your application listing.
+please add more app_xxxx custom fields for each app you want to add in your locals.tf file for your application listing.
 
 
 **START**
