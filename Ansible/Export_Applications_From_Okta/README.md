@@ -1,7 +1,9 @@
 # Solution Description
 This solution shows how to export applications out of an Okta environment and convert into a JSON file which is compatible to use as an Application inventory file to provide as an input to a Terrform based solution (https://github.com/1id-presales/Automation-OneLogin/tree/main/Terraform/Reference_Env01) which will automatically create applications in a target OneLogin environment.<br>
 The solution will extract applications from Okta and try to match them to a relevant connector id in OneLogin.<br>
-If a relevant connector id has not been mapped then the connector_id attribute in the output will contain the original name of the pre-configured application in Okta and can be manually amended by finding the appropriate connector id in OneLogin and updating the application inventory file before using it as an input into the Terraform process.
+If a relevant connector id has not been mapped then the connector_id attribute in the output will contain the original name of the pre-configured application in Okta and can be manually amended by finding the appropriate connector id in OneLogin and updating the application inventory file before using it as an input into the Terraform process.<br>
+
+The solution contains a short sample of an Okta to OneLogin Application connector mapping file in group_vars/all_vars.yml. To obtain a more Comprehensive mapping file please contact the One Identity Support team via our Support Portal.
 
 # How To Instructions
 
