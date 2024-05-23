@@ -1,1 +1,113 @@
-tbc
+---
+- hosts: localhost
+  gather_facts: False
+
+  vars_prompt:
+    - name: user_email
+      prompt: What is the user's email address?
+      private: false
+
+    - name: ip
+      prompt: What IP Address is requesting access?
+      private: false
+
+    - name: user_agent_selected
+      prompt: "What Browser/Machine is requesting access?\n1- Windows Chrome\n2- Windows Edge\n3- Windows 10 - Firefox\n4- Windows 7 - Chrome\n5- Windows 7 - Internet Explorer 11\n6- macOS - Safari\n7- macOS - Chrome\n8- macOS - Firefox\n9- Ubuntu - Chrome\n10- Ubuntu - Firefox\n"
+      private: false
+
+  vars:
+    ol_client_id: ""
+    ol_client_secret: ""
+    ol_subdomain: ""
+    ol_region: ""  ## US or EU ##
+    user_agents:
+      1: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+      2: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.864.48 Safari/537.36 Edg/91.0.864.48"
+      3: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"
+      4: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+      5: "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko"
+      6: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15"
+      7: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+      8: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:89.0) Gecko/20100101 Firefox/89.0"
+      9: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+      10: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0"
+      11: "Mozilla/5.0 (Linux; Android 10; SM-G975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Mobile Safari/537.36"
+      12: "Mozilla/5.0 (Android 10; Mobile; rv:89.0) Gecko/89.0 Firefox/89.0"
+      13: "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+      14: "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/91.0.4472.124 Mobile/15E148 Safari/604.1"
+      15: "Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+      16: "Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/91.0.4472.124 Mobile/15E148 Safari/604.1"
+      17: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 OPR/77.0.4054.90"
+      18: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 OPR/77.0.4054.90"
+      19: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Vivaldi/4.0.2312.27"
+      20: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Vivaldi/4.0.2312.27"
+
+  tasks:
+    - name: Set user agent based on selection
+      set_fact:
+        user_agent: "{{ user_agents[user_agent_selected | int] }}"
+
+    - name: Get access token
+      uri:
+        url: "https://{{ ol_subdomain }}.onelogin.com/auth/oauth2/v2/token"
+        method: POST
+        status_code: [200, 201]
+        body_format: json
+        body:
+          grant_type: "client_credentials"
+        return_content: yes
+        headers:
+          Content-Type: application/json
+          Authorization: "client_id:{{ ol_client_id }}, client_secret:{{ ol_client_secret }}"
+      register: response
+
+    - name: SmartMFA validate an Authentication Request
+      uri:
+        url: "https://api.{{ ol_region }}.onelogin.com/api/2/smart-mfa"
+        method: POST
+        status_code: [200, 201]
+        return_content: yes
+        body_format: json
+        body:
+          user_identifier: "{{ user_email }}"
+          email: "{{ user_email }}"
+          risk_threshold: 30
+          device_id: ""
+          context:
+            ip: "{{ ip }}"
+            user_agent: "{{ user_agent }}"
+        headers:
+          Content-Type: application/json
+          Authorization: "bearer {{ response.json.access_token }}"
+      register: response3
+
+    - name: Print API response
+      debug:
+        msg: "{{ response3.json }}"
+
+    - name: Check if MFA is needed?
+      debug:
+        msg: "Risk is all good. No need for MFA this time :)"
+      when: response3.json.mfa.otp_sent == false
+
+    - name: Get OTP from input if not already defined
+      pause:
+        prompt: "Enter your OTP"
+      register: otp_token
+      when: response3.json.mfa.otp_sent == true
+
+    - name: Verify OTP Code
+      uri:
+        url: "https://api.{{ ol_region }}.onelogin.com/api/2/smart-mfa/verify"
+        method: POST
+        status_code: [200, 201]
+        return_content: yes
+        body_format: json
+        body:
+          state_token: "{{ response3.json.mfa.state_token }}"
+          otp_token: "{{ otp_token.user_input }}"
+        headers:
+          Content-Type: application/json
+          Authorization: "bearer {{ response.json.access_token }}"
+      register: response4
+      when: response3.json.mfa.otp_sent == true
