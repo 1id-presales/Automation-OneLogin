@@ -1,0 +1,89 @@
+---
+- hosts: localhost
+  vars:
+    ## token: response.json.access_token
+    ol_client_id: ""
+    ol_client_secret: ""
+    ol_subdomain: ""
+    user1_email: ""
+    authenticator_factor_id: "" 
+  tasks:    
+    
+    - name: get access token
+      uri:
+        url: https://{{ ol_subdomain }}.onelogin.com/auth/oauth2/v2/token
+        method: POST
+        status_code: [200,201]
+        body_format: json
+        body:
+            {
+            "grant_type":"client_credentials"
+            }
+        return_content: yes
+        headers:
+          Content-Type: application/json
+          Authorization: "client_id:{{ ol_client_id }}, client_secret:{{ ol_client_secret }}"
+      register: response
+
+    - name: get users id
+      uri:
+        url: https://{{ ol_subdomain }}.onelogin.com/api/2/users?email={{ user1_email }}
+        method: GET
+        status_code: [200,201]
+        return_content: yes
+        headers:
+          Content-Type: application/json
+          Authorization: "bearer {{ response.json.access_token }}"
+      register: response3
+
+      ##- name: Print all json response
+      ##debug:
+      ##  msg: this is the {{ response3.json.data[0].id }}
+
+    - name: get available factors
+      uri:
+        url: https://{{ ol_subdomain }}.onelogin.com/api/2/mfa/users/{{ response3.json[0].id }}/factors
+        method: GET
+        status_code: [200,201]
+        return_content: yes
+        headers:
+          Content-Type: application/json
+          Authorization: "bearer {{ response.json.access_token }}"
+      register: response4
+
+    - name: enroll authenticator factor - not verified 
+      uri:
+        url: https://{{ ol_subdomain }}.onelogin.com/api/2/mfa/users/{{ response3.json[0].id }}/registrations
+        method: POST
+        status_code: [200,201]
+        body_format: json
+        body:
+            {
+            "factor_id": "{{ authenticator_factor_id}}",
+            "display_name": "Authenticator"
+            }
+        return_content: yes
+        headers:
+          Content-Type: application/json
+          Authorization: "bearer {{ response.json.access_token }}"
+      register: response5
+
+    - name: Get OTP from input if not already defined
+      pause:
+        prompt: "Enter your OTP"
+      register: otp_token
+      when: otp_token is not defined
+
+    - name: Verify OTP Code
+      uri:
+        url: "https://{{ ol_subdomain }}.onelogin.com/api/2/mfa/users/{{ response3.json[0].id }}/registrations/{{ response5.json.id }}"
+        method: PUT
+        status_code: [200, 201]
+        return_content: yes
+        body_format: json
+        body:
+          otp: "{{ otp_token.user_input }}"
+        headers:
+          Content-Type: application/json
+          Authorization: "bearer {{ response.json.access_token }}"
+      register: response6
