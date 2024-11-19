@@ -44,5 +44,12 @@ resource onelogin_users username {
 ## example of how to create a second new user in your OneLogin environment this time using the generic Rest Provider and our V2 users endpoint
 resource "restapi_object" "oneloginuser1" {
   path = "/api/2/users"
-  data = "{ \"email\": \"${var.user2_email}\", \"username\": \"${var.user2_username}\", \"firstname\": \"${var.user2_firstname}\", \"lastname\": \"${var.user2_lastname}\", \"state\": 1, \"status\": 1}"
+  data = jsonencode({
+    email     = var.user2_email
+    username  = var.user2_username
+    firstname = var.user2_firstname
+    lastname  = var.user2_lastname
+    state     = 1
+    status    = 1
+  })
 }
