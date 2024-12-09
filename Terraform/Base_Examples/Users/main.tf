@@ -2,7 +2,7 @@ terraform {
   required_providers {
     restapi = {
       source = "Mastercard/restapi"
-      version = "1.18.2"
+      version = "1.20"
     }
     onelogin = {
       source  = "onelogin/onelogin"
@@ -26,6 +26,21 @@ provider "onelogin" {
   # Configuration options
 client_id = var.ol_client_id
 client_secret = var.ol_client_secret
+}
+
+
+######################################################################################################
+###########################          Custom Fields Section  ###############################################
+
+## example of how to create a custom_field in your OneLogin environment
+resource "restapi_object" "ol_cf1" {
+  path = "/api/2/users/custom_attributes"
+  data = jsonencode({
+    user_field = {
+      name = "food"
+      shortname = "food"
+    }
+  })
 }
 
 #### Users via OneLogin Provider
