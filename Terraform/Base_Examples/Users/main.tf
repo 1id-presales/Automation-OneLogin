@@ -46,6 +46,7 @@ resource "restapi_object" "ol_cf1" {
 #### Users via OneLogin Provider
 # create a new user using the offical OneLogin Terraform Provider
 resource onelogin_users username {
+depends_on = [restapi_object.ol_cf1]
   username = var.user1_username
   email    = var.user1_email
   firstname = var.user1_firstname
@@ -59,6 +60,7 @@ resource onelogin_users username {
 ## example of how to create a second new user in your OneLogin environment this time using the generic Rest Provider and our V2 users endpoint
 resource "restapi_object" "oneloginuser1" {
   path = "/api/2/users"
+  depends_on = [restapi_object.ol_cf1]
   data = jsonencode({
     email     = var.user2_email
     username  = var.user2_username
