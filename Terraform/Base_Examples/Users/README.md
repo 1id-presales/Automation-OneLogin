@@ -3,6 +3,7 @@
 This example will create **One new custom field (which is called "food" in this example)** and also **two new users** in your <br>
 target OneLogin environment.
 It will also set a value of "pizza" for the **custom attribute** which was created by this configuration on one of the users. <br>
+
 Before proceeding with this example ensure you create a new custom field in your target OneLogin environment called **food**. <br>
 This needs to be done via the Admin console. For more details see **https://onelogin.service-now.com/support?id=kb_article&sys_id=653d60e6973b2150c90c3b0e6253afd2** <br>
 
