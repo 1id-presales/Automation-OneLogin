@@ -1,9 +1,9 @@
 locals {
   ol_users = [
     {
-      username   = "James.smith"
+      username   = "James.Smith"
       firstname  = "James"
-      lastname   = "smith"
+      lastname   = "Smith"
       email      = "james.smith@Cedarstone.com"
       department = "Sales ops"
       title      = "Manager"
@@ -12,37 +12,59 @@ locals {
       state      = 1
       status     = 1
       custom_attributes = {
-        staff_id = "12345"
+        staff_id = "123456"
         personal_mail = "james.smith66666666@gmail.com"
       }
     },
+   {
+      username   = "Jane.smith"
+      firstname  = "Jane"
+      lastname   = "smith"
+      email      = "jane.smith@Cedarstone.com"
+      department = "IT ops"
+      title      = "Manager"
+      company    = "Cedarstone"
+      phone      = "4343434434"
+      state      = 1
+      status     = 1
+      custom_attributes = {
+        staff_id = "434344"
+        personal_mail = "jane.smith66666666@gmail.com"
+      }
+    }
     # Add more standard users here
   ]
 ol_application_object = [
-  {
-            connector_id : 68332,
-            name : "Wrike"
-    notes = "custom_attribute_app_Wrike"
-    visible = true
-    allow_assumed_signin = false
-    birthright_app = ""
-    app_owner = "james.smith@Cedarstone.com"      # required -  email address of admin user responsible for configuring up the app connector
-        }
-# Add more Apps here
+{
+        "allow_assumed_signin": false,
+        "app_owner": "jane.smith@Cedarstone.com",
+        "birthright_app": "",
+        "connector_id": 78887,
+        "display_name": "AWS IAM Identity Center",
+        "name": "AWS_IAM_Identity_Center",
+        "visible": false
+    },
+{
+        "allow_assumed_signin": false,
+        "app_owner": "",
+        "birthright_app": "true",
+        "connector_id": 68023,
+        "display_name": "Zugata",
+        "name": "Zugata",
+        "visible": false
+    }
 ]
-
 ol_application_with_app_policy_object = [
 {
-            connector_id : 68251,
-            name : "Lever"
-            policy_id = var.ol_high_risk_app_policy_id
-    tab_id = var.ol_custom_tab1_id
-    notes = "custom_attribute_app_Lever"
-    visible = true
-    allow_assumed_signin = false
-    birthright_app = ""
-    app_owner = ""      # required -  email address of admin user responsible for configuring up the app connector
-        },
-# Add more Apps here
+        "allow_assumed_signin": false,
+        "app_owner": "",
+        "policy_id": "${var.ol_medium_risk_app_policy_id}",
+        "tab_id": "${var.ol_custom_tab1_id}",
+        "birthright_app": "",
+        "connector_id": 68332,
+        "display_name": "Wrike",
+        "name": "Wrike",
+        "visible": false
+    }
 ]
 }
