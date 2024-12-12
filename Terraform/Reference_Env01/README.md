@@ -9,6 +9,7 @@ In addition to this, applications can also be tagged as "Birthright" application
 This will result in the creation of an additional "BIRTHRIGHT-APP-ACCESS" mapping for the application which ensure the related Application Access role will be automatically allocated to all users regardless of whether the related custom field for that application is set to "TRUE" or not.<br>
 
 The solution will also see the creation of 3 Application Entitlements OneLogin Roles for each application. These roles can then be used in the application connector configuration by the app owner (when configuring the connector) to control how and when application rules may or may not be trigger based on the membership status of these Application Entitlements OneLogin roles. 
+
 For example, the Application Entitlements roles could be used in Application Rules to assign different licenses or groups to different users when they are provisioned into the target application. Users can be added automatically to the relevant Application Entitlement role simply by appending a "-L1"/"-L2"/"-L3" to the "True" value already set (which grants the Access to the Application) on the related application specific custom field for the user <br>
 
 The solution does not intend to fully configure every element of an application connector which is added to the application inventory but instead creates dedicated delegated admin privileges associated with that application connector which will then be allocated to the relevant person/people responsible for that application within your organization.<br> 
