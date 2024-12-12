@@ -1,7 +1,7 @@
 # Solution Description
 This solution shows how to manage the process of Application onboarding/offboarding into your OneLogin environment in an automated and structured way using Terraform. This solution can be used by existing OneLogin customers who have traditionally managed the application onboarding process manually in the OneLogin Admin Console and now want to shift to using a IaC/Devops approach or it can be used by new customers setting up OneLogin for the first time and can greatly assist in the process of migrating applications from an existing Access Management solution into OneLogin.<br>
 
-The solution will ensure that each time an application is created in the target OneLogin environment it will be accompanied by related roles, mappings and delegated admin privileges which will control who is granted access to the Application (from an end user perspective) and also who is granted the ability to manage the configuration of that Application from an delegated admin perspective.<br>
+The solution will ensure that each time an application is created in the target OneLogin environment it will be accompanied by related custom fields,roles, mappings and delegated admin privileges which will control who is granted access to the Application (from an end user perspective) and also who is granted the ability to manage the configuration of that Application from an delegated admin perspective.<br>
 
 The main principle of this solution is that a one-to-one relationship is defined between an application and a specific custom field in the OneLogin cloud directory. The process of allocating the particular application to an end user is then then simply a case of setting that custom field value to "True" which will then trigger the related Application Access mapping to fire and allocate the relevant Application Access OneLogin Role to the user automatically.<br>
 In addition to this, applications can also be tagged as "Birthright" applications when added to the application inventory (in the locals.tf file) by setting the value of the birthright_app key to be "yes". This will result in the creation of an additional "BIRTHRIGHT-APP-ACCESS" mapping for the application which ensure the related Application Access role will be automatically allocated to all users regardless of whether the related custom field for that application is set to "TRUE" or not.<br>
@@ -20,9 +20,10 @@ With this solution adding a new application to your OneLogin environment is just
 
 # How To Instructions
 
-This example will create a series of Applications, Roles, Mappings, a Test User and Privileges in your target OneLogin environment. <br>
-**Each Application** you define in your Application inventory in the tfvars file will be created along with following <br>
+This example will create a series of Custom Fields, Applications, Roles, Mappings, a Test User and Privileges in your target OneLogin environment. <br>
+**Each Application** you define in your Application inventory in the locals.tf file will be created along with following <br>
 
+**1 Custom Field (APP_*****)** <br>
 **1 Application Access Role (AA-*****)** <br>
 **2 Delegated Admin Roles (DA-APP-*****)** <br>
 **3 Application Entitlements Roles (AE-*****)** <br>
@@ -39,18 +40,8 @@ Populate the required configuration for your reference environment into the rele
 
 Create an API credential for Terraform to use in your target OneLogin environment with **"Manage All" permissions**. For detail see **https://developers.onelogin.com/api-docs/2/getting-started/working-with-api-credentials** 
 
-**Before** running this example it is required to **create some custom fields** in your target OneLogin environment. It is not currently possible to create these custom fields via the OneLogin Admin API and must be done in your OneLogin Admin console manually. <br>
 You should also create a app policy to be your baseline app policy in the environment and then some different app policies (for example low,medium and high risk app categories) that can be allocated to different applications that you don't want to have the baseline app policy. Supply these App Policy IDs into the Apps Vars section of the terraform.tfvars file as needed.
 Please also create an example user policy and supply this user policy into the Smart Hooks Vars section of the tfvars file.
-
-The following custom fields should be created in your target OneLogin environment. <br>
-
-**staff_id** <br>
-**personal_mail** <br>
-**app_Wrike** <br>
-**app_Lever** <br>
-please add more app_xxxx custom fields for each app you want to add in your locals.tf file for your application listing.
-
 
 **START**
 - From a system with Terraform and Git installed create a new folder and run 
