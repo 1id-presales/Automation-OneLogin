@@ -492,7 +492,7 @@ resource "restapi_object" "oneloginsmarthook_pa" {
 
 resource onelogin_users "users" {
   count = length(local.ol_users)
-  depends_on = [restapi_object.custom_fields_staffid,restapi_object.custom_fields_personal_mail]
+  depends_on = [restapi_object.custom_fields_staffid,restapi_object.custom_fields_personal_mail,onelogin_user_mappings.app_access_mapping,onelogin_user_mappings.app_access_mapping2]
   username  = local.ol_users[count.index].username
   firstname = local.ol_users[count.index].firstname
   lastname  = local.ol_users[count.index].lastname
