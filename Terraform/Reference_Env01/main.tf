@@ -501,7 +501,6 @@ resource onelogin_users "users" {
   phone     = local.ol_users[count.index].phone
   company     = local.ol_users[count.index].company
   state     = local.ol_users[count.index].state
-  member_of     = local.ol_users[count.index].member_of
   status     = local.ol_users[count.index].status
   custom_attributes = local.ol_users[count.index].custom_attributes
 }
