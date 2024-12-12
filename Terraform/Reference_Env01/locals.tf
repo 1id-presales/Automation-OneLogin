@@ -42,7 +42,8 @@ ol_application_object = [
         "connector_id": 78887,
         "display_name": "AWS IAM Identity Center",
         "name": "AWS_IAM_Identity_Center",
-        "visible": false
+        "visible": true,
+        "ldap_access_group": "N/A"
     },
 {
         "allow_assumed_signin": false,
@@ -51,7 +52,8 @@ ol_application_object = [
         "connector_id": 68023,
         "display_name": "Zugata",
         "name": "Zugata",
-        "visible": false
+        "visible": true,
+        "ldap_access_group": "N/A"
     }
 ]
 ol_application_with_app_policy_object = [
@@ -64,7 +66,8 @@ ol_application_with_app_policy_object = [
         "connector_id": 68332,
         "display_name": "Wrike",
         "name": "Wrike",
-        "visible": false
+        "visible": false,
+        "ldap_access_group": "N/A"
     }
 ]
 }
