@@ -422,12 +422,12 @@ resource onelogin_privileges apps2_admin1 {
     depends_on = [restapi_object.company_apps2]
     description = "App Admin1 role for App-${each.value.display_name}"
     for_each = { for inst in local.ol_application_with_app_policy_object : inst.name => inst }
-    role_ids = []
+    role_ids = [onelogin_roles.da_apps2_admin1["${each.value.name}"].id]
     privilege {
         statement {
             effect = "Allow"
-            action = ["policies:List"]
-            scope = ["*"]
+            action = ["apps:List","apps:Get", "apps:Update"]
+            scope = ["apps/${restapi_object.company_apps2["${each.value.name}"].id}"]
         }
     }
 }
@@ -438,7 +438,7 @@ resource onelogin_privileges apps2_admin2 {
     depends_on = [restapi_object.company_apps2]
     description = "App Admin2 role for App-${each.value.display_name}"
     for_each = { for inst in local.ol_application_with_app_policy_object : inst.name => inst }
-    role_ids = []
+    role_ids = [onelogin_roles.da_apps2_admin2["${each.value.name}"].id]
     privilege {
         statement {
             effect = "Allow"
