@@ -198,7 +198,7 @@ resource onelogin_roles da_apps2_admin2 {
 resource onelogin_user_mappings app_access_mapping {
   name = "APP-ACCESS-${each.value.display_name}"
   enabled = true
-  depends_on = [restapi_object.company_apps]
+  depends_on = [restapi_object.company_apps, onelogin_roles.app_access]
   match = "any"
   for_each = { for inst in local.ol_application_object : inst.name => inst }
   actions  {
@@ -226,7 +226,7 @@ resource onelogin_user_mappings app_access_mapping {
 resource onelogin_user_mappings app_access_mapping2 {
   name = "APP-ACCESS-${each.value.display_name}"
   enabled = true
-  depends_on = [restapi_object.company_apps2]
+  depends_on = [restapi_object.company_apps2, onelogin_roles.app_access2]
   match = "any"
   for_each = { for inst in local.ol_application_with_app_policy_object : inst.name => inst }
   actions  {
@@ -251,10 +251,10 @@ resource onelogin_user_mappings app_access_mapping2 {
 }
 
 #### Mapping to set delegated admin for app_owner user for each app
-resource onelogin_user_mappings app_access_mappingdoh_app_owner {
+resource onelogin_user_mappings app_access_app_owner {
   name = "DA-App-Owner-${each.value.display_name}"
   enabled = true
-  depends_on = [restapi_object.company_apps]
+  depends_on = [restapi_object.company_apps,onelogin_roles.da_apps1_admin1]
   match = "all"
   for_each = { for inst in local.ol_application_object : inst.name => inst }
   actions  {
@@ -268,11 +268,29 @@ resource onelogin_user_mappings app_access_mappingdoh_app_owner {
   }
 }
 
+#### Mapping to set delegated admin for app_owner user for each app
+resource onelogin_user_mappings app_access_app_owner2 {
+  name = "DA-App-Owner-${each.value.display_name}"
+  enabled = true
+  depends_on = [restapi_object.company_apps2,onelogin_roles.da_apps2_admin1]
+  match = "all"
+  for_each = { for inst in local.ol_application_with_app_policy_object : inst.name => inst }
+  actions  {
+    value = [onelogin_roles.da_apps2_admin1["${each.value.name}"].id]
+    action = "add_role"
+  }
+  conditions  {
+    operator = "="
+    source = "email"
+    value = "${each.value.app_owner}"
+  }
+}
+
 #### Mapping to set delegated admin 1 role for each app
 resource onelogin_user_mappings app_access_mappingdoh {
   name = "DA-Admin1-${each.value.display_name}"
   enabled = true
-  depends_on = [restapi_object.company_apps]
+  depends_on = [restapi_object.company_apps,onelogin_roles.da_apps1_admin1]
   match = "all"
   for_each = { for inst in local.ol_application_object : inst.name => inst }
   actions  {
@@ -290,7 +308,7 @@ resource onelogin_user_mappings app_access_mappingdoh {
 resource onelogin_user_mappings app_access_birthright {
   name = "BIRTHRIGHT-APP-ACCESS-${each.value.display_name}"
   enabled = true
-  depends_on = [restapi_object.company_apps]
+  depends_on = [restapi_object.company_apps,onelogin_roles.app_access]
   match = "all"
   for_each = { for key, val in local.ol_application_object :
   	key => val if val.birthright_app == "true" }
@@ -309,7 +327,7 @@ resource onelogin_user_mappings app_access_birthright {
 resource onelogin_user_mappings app_access_birthright2 {
   name = "BIRTHRIGHT-APP-ACCESS-${each.value.display_name}"
   enabled = true
-  depends_on = [restapi_object.company_apps2]
+  depends_on = [restapi_object.company_apps2,onelogin_roles.app_access2]
   match = "all"
   for_each = { for key, val in local.ol_application_with_app_policy_object :
   	key => val if val.birthright_app == "true" }
@@ -333,7 +351,7 @@ resource onelogin_user_mappings app_access_birthright2 {
 resource onelogin_user_mappings app_entitlements_1_mapping {
   name = "Allocate AE Role-${each.value.display_name}-L1"
   enabled = true
-  depends_on = [restapi_object.company_apps]
+  depends_on = [restapi_object.company_apps,onelogin_roles.app_entitlements_1]
   match = "all"
   for_each = { for inst in local.ol_application_object : inst.name => inst }
   actions  {
@@ -351,7 +369,7 @@ resource onelogin_user_mappings app_entitlements_1_mapping {
 resource onelogin_user_mappings app_entitlements_2_mapping {
   name = "Allocate AE Role-${each.value.display_name}-L2"
   enabled = true
-  depends_on = [restapi_object.company_apps]
+  depends_on = [restapi_object.company_apps,onelogin_roles.app_entitlements_2]
   match = "all"
   for_each = { for inst in local.ol_application_object : inst.name => inst }
   actions  {
@@ -369,7 +387,7 @@ resource onelogin_user_mappings app_entitlements_2_mapping {
 resource onelogin_user_mappings app_entitlements_3_mapping {
   name = "Allocate AE Role-${each.value.display_name}-L3"
   enabled = true
-  depends_on = [restapi_object.company_apps]
+  depends_on = [restapi_object.company_apps,onelogin_roles.app_entitlements_3]
   match = "all"
   for_each = { for inst in local.ol_application_object : inst.name => inst }
   actions  {
