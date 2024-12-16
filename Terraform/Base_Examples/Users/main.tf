@@ -41,6 +41,11 @@ resource "restapi_object" "ol_cf1" {
       shortname = "food"
     }
   })
+  lifecycle {
+    ignore_changes = [
+    api_data["position"],
+    api_data["id"]
+]}
 }
 
 #### Users via OneLogin Provider
